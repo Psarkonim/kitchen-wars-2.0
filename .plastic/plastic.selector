@@ -1,0 +1,4 @@
+repository "kitchen wars 0.1/kitchen wars 0.1@10171581616508@cloud"
+  path "/"
+    br "/main"
+    co "/main"
