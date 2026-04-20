@@ -19,6 +19,7 @@ public class Rat : MonoBehaviour
     [SerializeField] private float lastAttackTime = 0f;
     [SerializeField] private float range;
     [SerializeField] private LayerMask enemyLayer;
+    [SerializeField] private bool isAttacking;
     private List<Effect> effects;
 
     private void Awake()
@@ -27,25 +28,28 @@ public class Rat : MonoBehaviour
         curSpeed = speed;
         effects = new List<Effect>();
     }
+
     void Start()
     {
-        Debug.Log("Пуск");
     }
-    
+
     void HandleMove()
     {
-        rb.linearVelocity = new Vector2(-curSpeed, rb.linearVelocity.y);
+        if (!isAttacking)
+            rb.linearVelocity = new Vector2(-curSpeed, rb.linearVelocity.y);    
+        else
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
     }
-    // Update is called once per frame
+
     void Update()
     {
         HandleMove();
         HandleAttack();
+
         foreach(var effect in effects)
             effect.ApplyEffect(this);
-        
     }
-    
+
     void UpdateCanAttack()
     {
         if (Time.time >= lastAttackTime + cooldown)
@@ -56,26 +60,38 @@ public class Rat : MonoBehaviour
     {
         UpdateCanAttack();
 
-        if (!canAttack)
-            return;
+        var hit = Physics2D.Raycast(transform.position, Vector2.left, range, enemyLayer);
 
-        canAttack = false;
+        if (hit.collider != null)
+        {
+            isAttacking = true;
+            curSpeed = 0;
 
-        var hit = Physics2D.Raycast(transform.position, Vector2.right, range, enemyLayer);
-
-        if (hit.collider)
-            Attack(hit.collider.GetComponent<Food>());
+            if (canAttack)
+                Attack(hit.collider.GetComponent<Food>());
+        }
+        else
+        {
+            isAttacking = false;
+            curSpeed = speed;
+        }
     }
+
     void Attack(Food food)
     {
-        food.TakeDamage(damage);
+        if (food != null)
+        {
+            food.TakeDamage(damage);
+            lastAttackTime = Time.time;
+            canAttack = false;
+        }
     }
 
     public void TakeDamage(float damage)
     {
         curHp -= damage;
 
-        if (curHp <= 0)
+        if (curHp <= 0) 
             Destroy(gameObject);
     }
 }
