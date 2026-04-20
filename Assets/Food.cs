@@ -6,6 +6,8 @@ public class Food : MonoBehaviour
 {
     [SerializeField] private GameObject simpleBullet;
     [SerializeField] private float curHp;
+    public float CurHp => curHp;
+
     [SerializeField] private float maxHp;
     [SerializeField] private float cooldown;
     [SerializeField] private bool canAttack;
