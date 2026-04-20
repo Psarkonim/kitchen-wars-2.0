@@ -136,7 +136,7 @@ MonoBehaviour:
   simpleBullet: {fileID: 8917940813283496913, guid: e7eca4bc436b74e469d4dbcc2b37ce38, type: 3}
   curHp: 100
   maxHp: 100
-  cooldown: 4
+  cooldown: 3
   canAttack: 1
   lastAttackTime: 0
 --- !u!70 &8004001894611516896
