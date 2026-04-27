@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 41440902675659481}
   - component: {fileID: 1708726899075428579}
   - component: {fileID: 2617607744908352385}
-  - component: {fileID: 4032826109591280463}
   - component: {fileID: 8004001894611516896}
+  - component: {fileID: 7004343916574039840}
   m_Layer: 6
-  m_Name: Food
+  m_Name: Strawberry
   m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -121,24 +121,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!114 &4032826109591280463
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7336144278802834225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fd81d6a284caa84eb67639b306f66cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Food
-  simpleBullet: {fileID: 8917940813283496913, guid: e7eca4bc436b74e469d4dbcc2b37ce38, type: 3}
-  curHp: 100
-  maxHp: 100
-  cooldown: 3
-  canAttack: 1
-  lastAttackTime: 0
 --- !u!70 &8004001894611516896
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -176,3 +158,23 @@ CapsuleCollider2D:
   m_Offset: {x: 0.049171925, y: -0.016390562}
   m_Size: {x: 1.0255623, y: 1.1227813}
   m_Direction: 0
+--- !u!114 &7004343916574039840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7336144278802834225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cb1255a58a544579c017d2c74574b98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Food_as_shooting
+  maxHp: 0
+  curHp: 0
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  simpleBullet: {fileID: 8917940813283496913, guid: e7eca4bc436b74e469d4dbcc2b37ce38, type: 3}
+  cooldown: 3
+  canAttack: 0

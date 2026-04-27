@@ -1,62 +1,35 @@
-using Assets;
 using UnityEngine;
-using UnityEngine.Rendering;
 
-public class Food : MonoBehaviour
+public abstract class Food : MonoBehaviour
 {
-    [SerializeField] private GameObject simpleBullet;
-    [SerializeField] private float curHp;
+    [SerializeField] protected float maxHp;
+    [SerializeField] protected float curHp;
+
+    protected Rigidbody2D rb;
+    protected SpriteRenderer spriteRenderer;
+    
+
     public float CurHp => curHp;
-
-    [SerializeField] private float maxHp;
-    [SerializeField] private float cooldown;
-    [SerializeField] private bool canAttack;
-    [SerializeField] private float lastAttackTime;
-    Rigidbody2D rb;
-    SpriteRenderer spriteRenderer;
-
-    private void Awake()
+    public LayerMask enemyLayer;
+    protected virtual void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        curHp = maxHp;
     }
 
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        HandleAttack();
-    }
-
-    void UpdateCanAttack()
-    {
-        if (Time.time >= lastAttackTime + cooldown)
-            canAttack = true;
-    } 
-
-    public void TakeDamage(float damage)
+    public virtual void TakeDamage(float damage)
     {
         curHp -= damage;
-
+        
         if (curHp <= 0)
-            Destroy(gameObject);
+        {
+            Die();
+        }
     }
 
-    private void HandleAttack()
+    protected virtual void Die()
     {
-        UpdateCanAttack();
-
-        if (!canAttack)
-            return;
-
-        canAttack = false;
-        lastAttackTime = Time.time;
-        var position = transform.position;
-        position.x += spriteRenderer.bounds.extents.x + 0.1f;
-        var newBullet = Instantiate(simpleBullet, position, Quaternion.identity);
-
+        Destroy(gameObject);
     }
 }

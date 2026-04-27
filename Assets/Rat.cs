@@ -8,7 +8,8 @@ using UnityEngine.InputSystem.XInput;
 public class Rat : MonoBehaviour
 {
     Rigidbody2D rb;
-
+    
+    [SerializeField] private Camera mainCamera;
     [SerializeField] private float speed;
     [SerializeField] private float maxHp;
     [SerializeField] private float curHp;
@@ -26,6 +27,7 @@ public class Rat : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         curSpeed = speed;
+        mainCamera = Camera.main;
         effects = new List<Effect>();
     }
 
@@ -33,6 +35,15 @@ public class Rat : MonoBehaviour
     {
     }
 
+    void HandleInBounds()
+    {
+        Vector3 rightEdge = mainCamera.ScreenToWorldPoint(new Vector3(Screen.width, 0, -mainCamera.transform.position.z));
+    
+        // Просто проверяем позицию объекта (без учета его ширины)
+        if (transform.position.x > rightEdge.x + 1f)  // +1 запас
+            Destroy(gameObject);
+        
+    }
     void HandleMove()
     {
         if (!isAttacking)
@@ -45,7 +56,7 @@ public class Rat : MonoBehaviour
     {
         HandleMove();
         HandleAttack();
-
+        HandleInBounds();
         foreach(var effect in effects)
             effect.ApplyEffect(this);
     }
