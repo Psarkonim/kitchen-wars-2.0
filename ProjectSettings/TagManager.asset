@@ -15,7 +15,7 @@ TagManager:
   - Food
   - Bullet
   - Enemy
-  - 
+  - Background
   - 
   - 
   - 
@@ -41,6 +41,12 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: background
+    uniqueID: 980179105
+    locked: 0
+  - name: sprite
+    uniqueID: 3375149603
     locked: 0
   m_RenderingLayers:
   - Default

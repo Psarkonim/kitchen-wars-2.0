@@ -39,8 +39,7 @@ public class Rat : MonoBehaviour
     {
         Vector3 rightEdge = mainCamera.ScreenToWorldPoint(new Vector3(Screen.width, 0, -mainCamera.transform.position.z));
     
-        // Просто проверяем позицию объекта (без учета его ширины)
-        if (transform.position.x > rightEdge.x + 1f)  // +1 запас
+        if (transform.position.x > rightEdge.x + 1f)
             Destroy(gameObject);
         
     }
@@ -48,8 +47,6 @@ public class Rat : MonoBehaviour
     {
         if (!isAttacking)
             rb.linearVelocity = new Vector2(-curSpeed, rb.linearVelocity.y);    
-        else
-            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
     }
 
     void Update()
@@ -57,6 +54,7 @@ public class Rat : MonoBehaviour
         HandleMove();
         HandleAttack();
         HandleInBounds();
+
         foreach(var effect in effects)
             effect.ApplyEffect(this);
     }

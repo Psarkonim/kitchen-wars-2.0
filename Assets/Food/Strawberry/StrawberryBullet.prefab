@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7583332508984448891}
   - component: {fileID: 7865215445339343064}
   m_Layer: 3
-  m_Name: Bullet1
+  m_Name: StrawberryBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -80,8 +80,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -919817693
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 8a630f207c26c304ab73a4f00326b14d, type: 3}

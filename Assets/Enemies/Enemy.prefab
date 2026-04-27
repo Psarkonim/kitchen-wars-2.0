@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3517763211559962372}
-  - component: {fileID: 588147452269187736}
   - component: {fileID: 6646147579903942822}
   - component: {fileID: 2068657632427459252}
   - component: {fileID: 892931728899817367}
@@ -37,18 +36,6 @@ Transform:
   - {fileID: 7472962391177161702}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &588147452269187736
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1741352504946120824}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd2ee42f0dfc5ae4389debe747cf947c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
 --- !u!50 &6646147579903942822
 Rigidbody2D:
   serializedVersion: 5
@@ -71,7 +58,7 @@ Rigidbody2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -124,6 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd443028436ea64d87d20a483cf0130, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  mainCamera: {fileID: 0}
   speed: 1.2
   maxHp: 100
   curHp: 100
@@ -215,8 +203,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -919817693
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3739934438641210800, guid: bad06da5cc153fd418bf8a19c390a674, type: 3}
