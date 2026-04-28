@@ -163,6 +163,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Apple
   maxHp: 200
   curHp: 200
+  range: 100
+  inventoryActiveSprite: {fileID: -6082342815931028966, guid: 20be1e921f7b0574a95cd6dbc42a792f, type: 3}
+  inventoryPassiveSprite: {fileID: 4348704763570647809, guid: b93e5ec7993b6b147b5792d3c00fc67c, type: 3}
+  spriteRenderer: {fileID: 0}
   enemyLayer:
     serializedVersion: 2
     m_Bits: 256

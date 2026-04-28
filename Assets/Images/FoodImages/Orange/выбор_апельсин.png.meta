@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 90ead82ded656a94ba87f9d633e058f7
+guid: 20be1e921f7b0574a95cd6dbc42a792f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6740222443126942654
-    second: orange1-1.png_0
+      213: -6082342815931028966
+    second: "\u0432\u044B\u0431\u043E\u0440_\u0430\u043F\u0435\u043B\u044C\u0441\u0438\u043D_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 32
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: orange1-1.png_0
+      name: "\u0432\u044B\u0431\u043E\u0440_\u0430\u043F\u0435\u043B\u044C\u0441\u0438\u043D_0"
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 30
-        height: 30
+        width: 64
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ebb62bdc9941a8d50800000000000000
-      internalID: 6740222443126942654
+      spriteID: a1a284e3f6d279ba0800000000000000
+      internalID: -6082342815931028966
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      orange1-1.png_0: 6740222443126942654
+      "\u0432\u044B\u0431\u043E\u0440_\u0430\u043F\u0435\u043B\u044C\u0441\u0438\u043D_0": -6082342815931028966
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

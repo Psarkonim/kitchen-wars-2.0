@@ -49,12 +49,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Egg
   maxHp: 200
   curHp: 200
+  range: 0
+  inventoryActiveSprite: {fileID: -9030538457830046345, guid: 6eaca30e045d95c48afdd2e40d57eb72, type: 3}
+  inventoryPassiveSprite: {fileID: 7998485954818072254, guid: b6c09588a2c9375488315be64633d00a, type: 3}
+  spriteRenderer: {fileID: 0}
   enemyLayer:
     serializedVersion: 2
     m_Bits: 256
-  fullHealthSprite: {fileID: -7516974576464091455, guid: c7487e9bfdcaead4db4d026a5c57ecaa, type: 3}
-  crackedSprite: {fileID: -7516974576464091455, guid: c7487e9bfdcaead4db4d026a5c57ecaa, type: 3}
-  brokenSprite: {fileID: -7516974576464091455, guid: c7487e9bfdcaead4db4d026a5c57ecaa, type: 3}
+  fullHealthSprite: {fileID: 8990798767766690724, guid: 82fd66805ae23a247ad7cf441ca80bdd, type: 3}
+  crackedSprite: {fileID: 2236687651752142587, guid: fdf760b4f765fab468eb9a5e2ffb2e25, type: 3}
+  brokenSprite: {fileID: 6263414791880342048, guid: e6c962cea62858b4b9598c741ab72483, type: 3}
 --- !u!50 &314883828274614378
 Rigidbody2D:
   serializedVersion: 5
@@ -176,5 +180,5 @@ SpriteRenderer:
   m_Size: {x: 0.72, y: 0.88}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0

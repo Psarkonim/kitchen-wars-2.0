@@ -2,7 +2,7 @@
 
 namespace Assets
 {
-    public class Food_as_shooting: Food
+    public class Strawberry: Food
     {
         [Header("Атака")]
         [SerializeField] private GameObject simpleBullet;
@@ -18,7 +18,7 @@ namespace Assets
 
         private void UpdateCanAttack()
         {
-            if (Time.time >= lastAttackTime + cooldown)
+            if (Time.time >= lastAttackTime + cooldown && CheckIsEnemyInRange())
                 canAttack = true;
         } 
 

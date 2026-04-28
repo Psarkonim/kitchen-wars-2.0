@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 90ead82ded656a94ba87f9d633e058f7
+guid: fdf760b4f765fab468eb9a5e2ffb2e25
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6740222443126942654
-    second: orange1-1.png_0
+      213: 2236687651752142587
+    second: "\u044F\u0439\u0446\u043E2_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 32
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: orange1-1.png_0
+      name: "\u044F\u0439\u0446\u043E2_0"
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 30
-        height: 30
+        width: 18
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ebb62bdc9941a8d50800000000000000
-      internalID: 6740222443126942654
+      spriteID: bf6603c919f4a0f10800000000000000
+      internalID: 2236687651752142587
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      orange1-1.png_0: 6740222443126942654
+      "\u044F\u0439\u0446\u043E2_0": 2236687651752142587
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

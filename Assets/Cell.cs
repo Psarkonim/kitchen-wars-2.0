@@ -37,4 +37,10 @@ public class Cell : MonoBehaviour
             currentFood = Instantiate(foodPrefab, position, Quaternion.identity);
         }
     }
+
+    public void SetNewFood(GameObject food)
+    {
+        if (isEmpty)
+            foodPrefab = food;
+    }
 }
