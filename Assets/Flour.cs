@@ -16,18 +16,16 @@ public class Flour : Food
 
     private void SpawnVisuals()
     {
-        // Спавним картинки муки вправо по линии
-        for (int i = 0; i < laneLength; i++)
+        for (var i = 0; i < laneLength; i++)
         {
-            Vector3 spawnPos = transform.position + new Vector3(i, 0, 0);
+            var spawnPos = transform.position + new Vector3(i, 0, 0);
             Instantiate(flourVisualPrefab, spawnPos, Quaternion.identity, transform);
         }
     }
 
     private void ApplyEffectToLane()
     {
-        // Находим всех мышей на линии в момент установки
-        Collider2D[] colliders = Physics2D.OverlapBoxAll(
+        var colliders = Physics2D.OverlapBoxAll(
             transform.position + new Vector3(laneLength / 2, 0, 0), 
             new Vector2(laneLength, 1f), 
             0f, 
@@ -46,7 +44,6 @@ public class Flour : Food
 
     private void AddSlowToRat(Rat rat)
     {
-        // Используем Reflection, чтобы добраться до приватного списка effects в Rat
         var effectsField = typeof(Rat).GetField("effects", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
         var effectsList = (System.Collections.Generic.List<Effect>)effectsField.GetValue(rat);
         

@@ -5,7 +5,7 @@ namespace Assets
 {
     public class Effect
     {
-        public void ApplyEffect(Rat rat)
+        public virtual void ApplyEffect(Rat rat)
         {
             throw new System.Exception();
         }
