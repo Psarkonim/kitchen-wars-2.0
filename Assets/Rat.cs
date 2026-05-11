@@ -1,5 +1,6 @@
 using Assets;
 using System.Collections.Generic;
+using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -51,12 +52,30 @@ public class Rat : MonoBehaviour
 
     void Update()
     {
-        HandleMove();
         HandleAttack();
         HandleInBounds();
+        
+        void Update()
+        {
+            var cellCollider = Physics2D.OverlapPoint(transform.position, LayerMask.GetMask("Cell"));
 
-        foreach(var effect in effects)
-            effect.ApplyEffect(this);
+            if (cellCollider != null)
+            {
+                var cell = cellCollider.GetComponent<Cell>();
+                if (cell != null)
+                {
+                    foreach (var effect in cell.Effects.Where(effect => !effects.Contains(effect)))
+                    {
+                        effects.Add(effect);
+                    }
+                }
+            }
+
+            foreach(var effect in effects)
+                effect.ApplyEffect(this);
+
+            HandleMove(); 
+        }
     }
 
     void UpdateCanAttack()

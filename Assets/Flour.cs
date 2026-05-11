@@ -7,11 +7,12 @@ public class Flour : Food
     [SerializeField] private float slowMultiplier = 0.5f;
     [SerializeField] private GameObject flourVisualPrefab; 
     [SerializeField] private float laneLength = 15f; 
+    [SerializeField] private LayerMask cellLayer; // Нужно добавить слой клеток
 
     private void Start()
     {
         SpawnVisuals();
-        ApplyEffectToLane();
+        ApplyEffectToCells(); // Теперь работаем с клетками
     }
 
     private void SpawnVisuals()
@@ -23,30 +24,24 @@ public class Flour : Food
         }
     }
 
-    private void ApplyEffectToLane()
+    private void ApplyEffectToCells()
     {
-        var colliders = Physics2D.OverlapBoxAll(
-            transform.position + new Vector3(laneLength / 2, 0, 0), 
-            new Vector2(laneLength, 1f), 
-            0f, 
-            enemyLayer
-        );
+        // 1. Создаем зону поиска вдоль линии
+        // transform.position - это где стоит пачка муки
+        Vector2 size = new Vector2(laneLength, 0.5f);
+        Vector2 center = (Vector2)transform.position + new Vector2(laneLength / 2f, 0);
 
-        foreach (var col in colliders)
+        // 2. Ищем все коллайдеры на слое Cell
+        Collider2D[] cellColliders = Physics2D.OverlapBoxAll(center, size, 0f, cellLayer);
+
+        foreach (var col in cellColliders)
         {
-            Rat rat = col.GetComponent<Rat>();
-            if (rat != null)
+            Cell cell = col.GetComponent<Cell>();
+            if (cell != null)
             {
-                AddSlowToRat(rat);
+                // Накладываем эффект на КЛЕТКУ
+                cell.AddEffect(new SlowEffect(slowMultiplier, 9999f));
             }
         }
-    }
-
-    private void AddSlowToRat(Rat rat)
-    {
-        var effectsField = typeof(Rat).GetField("effects", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
-        var effectsList = (System.Collections.Generic.List<Effect>)effectsField.GetValue(rat);
-        
-        effectsList.Add(new SlowEffect(slowMultiplier, 999f)); 
     }
 }

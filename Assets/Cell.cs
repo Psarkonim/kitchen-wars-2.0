@@ -1,46 +1,44 @@
-using Unity.VisualScripting;
+using System.Collections.Generic;
+using Assets; 
 using UnityEngine;
 
 public class Cell : MonoBehaviour
 {
-    [SerializeField] private bool isEmpty;
-    [SerializeField] private GameObject foodPrefab;
-    [SerializeField] private GameObject currentFood;
+    [SerializeField] private GameObject currentFoodPrefab;
+    [SerializeField] private bool isFull = false;
 
-    private SpriteRenderer spriteRenderer;
+    [Header("Effects Settings")]
+    [SerializeField] private List<Effect> effects = new List<Effect>();
 
-    private void Awake()
-    {
-        isEmpty = true;
-        spriteRenderer = GetComponent<SpriteRenderer>();
-    }
-    void Start()
-    {
-    }
+    public List<Effect> Effects => effects;
 
-    void Update()
+    public void SetNewFood(GameObject foodPrefab)
     {
-        UpdateFood();
+        if (isFull) return;
+
+        Instantiate(foodPrefab, transform.position, Quaternion.identity, transform);
+        isFull = true;
     }
 
-    private void UpdateFood()
+    public void AddEffect(Effect newEffect)
     {
-        if (currentFood.IsDestroyed() && !isEmpty)
+        if (!effects.Contains(newEffect))
         {
-            foodPrefab = null;
-            isEmpty = true;
-        }
-        else if (isEmpty && !(foodPrefab is null))
-        {
-            isEmpty = false;
-            var position = transform.position;
-            currentFood = Instantiate(foodPrefab, position, Quaternion.identity);
+            effects.Add(newEffect);
+            Debug.Log($"На клетку {gameObject.name} наложен эффект: {newEffect.GetType().Name}");
         }
     }
 
-    public void SetNewFood(GameObject food)
+    public void RemoveEffect(Effect effect)
     {
-        if (isEmpty)
-            foodPrefab = food;
+        if (effects.Contains(effect))
+        {
+            effects.Remove(effect);
+        }
+    }
+
+    public bool HasEffect<T>() where T : Effect
+    {
+        return effects.Exists(e => e is T);
     }
 }

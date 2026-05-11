@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8230968904737749713}
   - component: {fileID: 8472864252216389458}
   - component: {fileID: 5717375500791362289}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: flour1_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -136,6 +136,9 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 0
-  slowAmount: 0.5
+  slowMultiplier: 0.5
   flourVisualPrefab: {fileID: 5351416023369386934}
-  laneWidth: 20
+  laneLength: 15
+  cellLayer:
+    serializedVersion: 2
+    m_Bits: 0
