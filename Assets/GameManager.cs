@@ -1,16 +1,14 @@
 ﻿using UnityEngine;
-using UnityEngine.InputSystem; 
+using UnityEngine.InputSystem;
 
 public class GameManager : MonoBehaviour
 {
     public GameObject currentFood;
+    public InventoryCell activeCell;
+
     [SerializeField] public Transform cells;
     [SerializeField] public LayerMask cellMask;
 
-    private void Start()
-    {
-        if (Mouse.current == null) return;
-    }
 
     private void Update()
     {
@@ -31,6 +29,13 @@ public class GameManager : MonoBehaviour
                 if (cell != null)
                 {
                     cell.SetNewFood(currentFood);
+
+                    if (activeCell != null)
+                    {
+                        activeCell.ConsumeFood();
+                        activeCell = null; 
+                    }
+
                     currentFood = null;
                 }
             }

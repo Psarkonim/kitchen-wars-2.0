@@ -15,9 +15,7 @@ public class Orange : Food
 
     private void Update()
     {
-        var isEnemyInRange = Physics2D.Raycast(transform.position, Vector2.right, range, enemyLayer);
-
-        if (isEnemyInRange.collider is not null)
+        if (CheckIsEnemyInRange())
             rb.linearVelocity = new Vector2(rollSpeed, rb.linearVelocity.y);
         if (transform.position.x >= destroyXPosition)
             Die();

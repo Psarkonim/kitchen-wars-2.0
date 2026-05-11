@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class InventoryCell : MonoBehaviour
 {
@@ -9,13 +8,20 @@ public class InventoryCell : MonoBehaviour
 
     protected SpriteRenderer spriteRenderer;
     private Vector2 currentSize;
-    public GameManager gameManager; 
+    public GameManager gameManager;
+
+    private Food foodComponent;
 
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         currentSize = transform.localScale;
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+
+        if (food != null)
+        {
+            foodComponent = food.GetComponent<Food>();
+        }
     }
 
     private void OnMouseDown()
@@ -25,43 +31,41 @@ public class InventoryCell : MonoBehaviour
 
     private void ChooseFood()
     {
-        var foodComponent = food.GetComponent<Food>();
+        if (amount == 0 || foodComponent == null) return;
 
         if (spriteRenderer.sprite == foodComponent.inventoryActiveSprite)
         {
             gameManager.currentFood = null;
+            gameManager.activeCell = null;
             spriteRenderer.sprite = foodComponent.inventoryPassiveSprite;
         }
-        else
+        else if (gameManager.activeCell == null)
         {
             gameManager.currentFood = food;
+            gameManager.activeCell = this; 
             spriteRenderer.sprite = foodComponent.inventoryActiveSprite;
         }
 
         SetSpriteSize();
     }
 
+    public void ConsumeFood()
+    {
+        Debug.Log("Еда поставлена");
+        spriteRenderer.sprite = foodComponent.inventoryPassiveSprite;
+        amount--;
+        SetSpriteSize();
+    }
+
     void Update()
     {
-        if (amount == 0 && !isEmpty)
-        {
-            food = null;
-            isEmpty = true;
-        }
-        else if (isEmpty && !(food is null))
+        if (isEmpty && food != null)
         {
             isEmpty = false;
-            var position = transform.position;
-            spriteRenderer.sprite = food.GetComponent<Food>().inventoryPassiveSprite;
+            foodComponent = food.GetComponent<Food>();
+            spriteRenderer.sprite = foodComponent.inventoryPassiveSprite;
             SetSpriteSize();
         }
-
-        if (gameManager.currentFood is null)
-        {
-            spriteRenderer.sprite = food.GetComponent<Food>().inventoryPassiveSprite;
-            SetSpriteSize();
-        }
-        
     }
 
     private void SetSpriteSize()

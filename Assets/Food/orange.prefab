@@ -164,8 +164,8 @@ MonoBehaviour:
   maxHp: 200
   curHp: 200
   range: 100
-  inventoryActiveSprite: {fileID: -6082342815931028966, guid: 20be1e921f7b0574a95cd6dbc42a792f, type: 3}
-  inventoryPassiveSprite: {fileID: 4348704763570647809, guid: b93e5ec7993b6b147b5792d3c00fc67c, type: 3}
+  inventoryActiveSprite: {fileID: 5051390380506208091, guid: bbee06956ab0d77449b9c83a85537a4a, type: 3}
+  inventoryPassiveSprite: {fileID: -4184096806510656562, guid: c36d817f72528914aa4ff1f41334f7e5, type: 3}
   spriteRenderer: {fileID: 0}
   enemyLayer:
     serializedVersion: 2
