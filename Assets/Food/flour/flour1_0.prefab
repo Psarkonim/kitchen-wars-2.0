@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4744855622345838900}
   - component: {fileID: 8230968904737749713}
-  - component: {fileID: 8472864252216389458}
   - component: {fileID: 5717375500791362289}
-  m_Layer: 10
+  - component: {fileID: 2362178003227556775}
+  - component: {fileID: -4989009125463679758}
+  m_Layer: 6
   m_Name: flour1_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79,8 +80,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -919817693
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -5345038882408103102, guid: d11a3cadd95f87b42871d08903d0d567, type: 3}
@@ -93,28 +94,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!95 &8472864252216389458
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5351416023369386934}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 52b8f89ffec97ad41a1f427f4072113f, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &5717375500791362289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,18 +106,82 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f34bba9c48ae4acbb34cbb8200f531dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Flour
-  maxHp: 0
-  curHp: 0
-  range: 0
-  inventoryActiveSprite: {fileID: 0}
-  inventoryPassiveSprite: {fileID: 0}
+  maxHp: 50
+  curHp: 50
+  range: 25
+  inventoryActiveSprite: {fileID: 6366938296783752196, guid: f51e9d7d24dc88a4385b79f0b038fb97, type: 3}
+  inventoryPassiveSprite: {fileID: -4323596404876059136, guid: 066ac02d7449ea94996a48217010c027, type: 3}
   spriteRenderer: {fileID: 0}
   enemyLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   slowMultiplier: 0.5
-  flourVisualPrefab: {fileID: 5351416023369386934}
+  flourVisualPrefab: {fileID: 5810184096933969016, guid: 94ae8de4cd86dde49857e83bf7ff36b4, type: 3}
   laneLength: 15
   cellLayer:
     serializedVersion: 2
+    m_Bits: 256
+--- !u!50 &2362178003227556775
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5351416023369386934}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
     m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!70 &-4989009125463679758
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5351416023369386934}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1, y: 1.24}
+  m_Direction: 0

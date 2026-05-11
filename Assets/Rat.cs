@@ -55,27 +55,25 @@ public class Rat : MonoBehaviour
         HandleAttack();
         HandleInBounds();
         
-        void Update()
-        {
-            var cellCollider = Physics2D.OverlapPoint(transform.position, LayerMask.GetMask("Cell"));
+        var cellCollider = Physics2D.OverlapPoint(transform.position, LayerMask.GetMask("Cell"));
 
-            if (cellCollider != null)
+        if (cellCollider != null)
+        {
+            var cell = cellCollider.GetComponent<Cell>();
+            if (cell != null)
             {
-                var cell = cellCollider.GetComponent<Cell>();
-                if (cell != null)
+                foreach (var effect in cell.Effects.Where(effect => !effects.Contains(effect)))
                 {
-                    foreach (var effect in cell.Effects.Where(effect => !effects.Contains(effect)))
-                    {
-                        effects.Add(effect);
-                    }
+                    effects.Add(effect);
                 }
             }
-
-            foreach(var effect in effects)
-                effect.ApplyEffect(this);
-
-            HandleMove(); 
         }
+
+        foreach(var effect in effects)
+            effect.ApplyEffect(this);
+
+        HandleMove(); 
+        
     }
 
     void UpdateCanAttack()
