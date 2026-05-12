@@ -8,6 +8,7 @@ public abstract class Food : MonoBehaviour
     [SerializeField] protected float range = 0f;
     [SerializeField] public Sprite inventoryActiveSprite;
     [SerializeField] public Sprite inventoryPassiveSprite;
+    [SerializeField] protected GameObject currentFoodPrefab;
 
     protected Rigidbody2D rb;
     public SpriteRenderer spriteRenderer;

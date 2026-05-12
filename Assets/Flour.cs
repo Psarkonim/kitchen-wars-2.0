@@ -1,47 +1,64 @@
-﻿using Assets;
+﻿using System.Collections.Generic;
+using Assets;
 using UnityEngine;
 
 public class Flour : Food
 {
     [Header("Flour Settings")]
     [SerializeField] private float slowMultiplier = 0.5f;
-    [SerializeField] private GameObject flourVisualPrefab; 
-    [SerializeField] private float laneLength = 15f; 
-    [SerializeField] private LayerMask cellLayer; // Нужно добавить слой клеток
+    [SerializeField] private float laneLength = 15f;
+    [SerializeField] private LayerMask cellLayer;
+
+    private List<Cell> _affectedCells = new(); 
+    private Sprite _flourSprite; 
 
     private void Start()
     {
-        SpawnVisuals();
-        ApplyEffectToCells(); // Теперь работаем с клетками
+        ExtractSpriteFromPrefab();
+        ApplyFlourToLane();
     }
 
-    private void SpawnVisuals()
+    private void ExtractSpriteFromPrefab()
     {
-        for (var i = 0; i < laneLength; i++)
+        if (currentFoodPrefab != null)
         {
-            var spawnPos = transform.position + new Vector3(i, 0, 0);
-            Instantiate(flourVisualPrefab, spawnPos, Quaternion.identity, transform);
+            var sr = currentFoodPrefab.GetComponent<SpriteRenderer>();
+            if (sr != null) _flourSprite = sr.sprite;
         }
     }
 
-    private void ApplyEffectToCells()
+    private void ApplyFlourToLane()
     {
-        // 1. Создаем зону поиска вдоль линии
-        // transform.position - это где стоит пачка муки
-        Vector2 size = new Vector2(laneLength, 0.5f);
-        Vector2 center = (Vector2)transform.position + new Vector2(laneLength / 2f, 0);
+        var size = new Vector2(laneLength, 0.5f);
+        var center = (Vector2)transform.position + new Vector2(laneLength / 2f, 0);
 
-        // 2. Ищем все коллайдеры на слое Cell
-        Collider2D[] cellColliders = Physics2D.OverlapBoxAll(center, size, 0f, cellLayer);
+        var cellColliders = Physics2D.OverlapBoxAll(center, size, 0f, cellLayer);
 
         foreach (var col in cellColliders)
         {
-            Cell cell = col.GetComponent<Cell>();
+            var cell = col.GetComponent<Cell>();
             if (cell != null)
             {
-                // Накладываем эффект на КЛЕТКУ
+                if (_flourSprite != null) 
+                    cell.ChangeSprite(_flourSprite);
+
                 cell.AddEffect(new SlowEffect(slowMultiplier, 9999f));
+
+                _affectedCells.Add(cell);
             }
         }
+    }
+
+    private void OnDestroy()
+    {
+        foreach (var cell in _affectedCells)
+        {
+            if (cell != null)
+            {
+                cell.ResetSprite();
+                cell.RemoveEffectsByType<SlowEffect>();
+            }
+        }
+        _affectedCells.Clear();
     }
 }
