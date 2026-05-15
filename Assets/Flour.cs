@@ -1,16 +1,19 @@
 ﻿using System.Collections.Generic;
 using Assets;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class Flour : Food
 {
     [Header("Flour Settings")]
     [SerializeField] private float slowMultiplier = 0.5f;
-    [SerializeField] private float laneLength = 15f;
+    [SerializeField] private float laneLength = 100f;
+    [SerializeField] private float duration = 5f;
     [SerializeField] private LayerMask cellLayer;
+    
 
     private List<Cell> _affectedCells = new(); 
-    private Sprite _flourSprite; 
+    [SerializeField] private Sprite _flourSprite; 
 
     private void Start()
     {
@@ -37,12 +40,13 @@ public class Flour : Food
         foreach (var col in cellColliders)
         {
             var cell = col.GetComponent<Cell>();
-            if (cell != null)
+
+            if (cell != null && !cell.isFull)
             {
                 if (_flourSprite != null) 
                     cell.ChangeSprite(_flourSprite);
 
-                cell.AddEffect(new SlowEffect(slowMultiplier, 9999f));
+                cell.AddEffect(new SlowEffect(slowMultiplier, duration));
 
                 _affectedCells.Add(cell);
             }

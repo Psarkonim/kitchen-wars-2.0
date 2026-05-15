@@ -24,6 +24,9 @@ public class Rat : MonoBehaviour
     [SerializeField] private bool isAttacking;
     private List<Effect> effects;
 
+    public float Speed => speed;
+    public float CurSpeed { get => curSpeed; set => curSpeed = value; }
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -50,28 +53,49 @@ public class Rat : MonoBehaviour
             rb.linearVelocity = new Vector2(-curSpeed, rb.linearVelocity.y);    
     }
 
-    void Update()
+    void HandleEffect()
     {
-        HandleAttack();
-        HandleInBounds();
-        
+        curSpeed = speed;
+
         var cellCollider = Physics2D.OverlapPoint(transform.position, LayerMask.GetMask("Cell"));
 
         if (cellCollider != null)
         {
             var cell = cellCollider.GetComponent<Cell>();
+
             if (cell != null)
             {
-                foreach (var effect in cell.Effects.Where(effect => !effects.Contains(effect)))
+                foreach (var effect in cell.Effects)
                 {
-                    effects.Add(effect);
+                    if (!effects.Any(e => e.GetType() == effect.GetType()))
+                        effects.Add(effect);
+                    else
+                    {
+                        var existingEffect = effects.FirstOrDefault(e =>  e.GetType() == effect.GetType());
+                        existingEffect.Refresh();
+                    }
                 }
             }
         }
 
-        foreach(var effect in effects)
+        for (int i = effects.Count - 1; i >= 0; i--)
+        {
+            var effect = effects[i];
             effect.ApplyEffect(this);
 
+            if (effect.IsEnded)
+            {
+                effect.RemoveEffect(this);
+                effects.RemoveAt(i);
+            }
+        }
+    }
+
+    void Update()
+    {
+        HandleAttack();
+        HandleInBounds();
+        HandleEffect();
         HandleMove(); 
         
     }

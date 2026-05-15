@@ -5,7 +5,7 @@ using UnityEngine;
 public class Cell : MonoBehaviour
 {
     [SerializeField] private GameObject currentFoodPrefab;
-    [SerializeField] private bool isFull = false;
+    [SerializeField] public bool isFull = false;
 
     [Header("Visual Settings")]
     [SerializeField] private SpriteRenderer spriteRenderer; 

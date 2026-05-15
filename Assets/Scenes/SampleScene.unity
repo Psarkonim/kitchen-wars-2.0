@@ -243,6 +243,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cell
   currentFoodPrefab: {fileID: 0}
   isFull: 0
+  spriteRenderer: {fileID: 0}
 --- !u!212 &57106651
 SpriteRenderer:
   serializedVersion: 2
@@ -288,19 +289,19 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -919817693
+  m_SortingLayer: 2
+  m_SortingOrder: 44
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.043137256}
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!4 &57106652
 Transform:
@@ -311,7 +312,7 @@ Transform:
   m_GameObject: {fileID: 57106649}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.1570506, y: -3.1125598, z: 0}
+  m_LocalPosition: {x: 4.328, y: -3.07256, z: 0}
   m_LocalScale: {x: 1.28702, y: 1.3276399, z: 0.6782}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -391,7 +392,7 @@ Transform:
   m_GameObject: {fileID: 119969729}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.24, y: 1.94, z: 0}
+  m_LocalPosition: {x: -5.31, y: 1.947, z: 0}
   m_LocalScale: {x: 1.2870201, y: 1.3276443, z: 0.6782}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -442,19 +443,19 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -919817693
+  m_SortingLayer: 2
+  m_SortingOrder: 44
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.043137256}
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!114 &119969732
 MonoBehaviour:
@@ -470,6 +471,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cell
   currentFoodPrefab: {fileID: 0}
   isFull: 0
+  spriteRenderer: {fileID: 0}
 --- !u!61 &119969733
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -544,7 +546,7 @@ Transform:
   m_GameObject: {fileID: 150551497}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.9700003, y: -4.709999, z: 0}
+  m_LocalPosition: {x: 7.93295, y: -4.709, z: 0}
   m_LocalScale: {x: 1.28702, y: 1.3276399, z: 0.6782}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -564,6 +566,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cell
   currentFoodPrefab: {fileID: 0}
   isFull: 0
+  spriteRenderer: {fileID: 0}
 --- !u!212 &150551500
 SpriteRenderer:
   serializedVersion: 2
@@ -609,19 +612,19 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -919817693
+  m_SortingLayer: 2
+  m_SortingOrder: 44
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.043137256}
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!61 &150551501
 BoxCollider2D:
@@ -697,7 +700,7 @@ Transform:
   m_GameObject: {fileID: 152726825}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.52, y: 1.97, z: 0}
+  m_LocalPosition: {x: -1.481, y: 1.947, z: 0}
   m_LocalScale: {x: 1.2870201, y: 1.3276443, z: 0.6782}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -717,6 +720,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cell
   currentFoodPrefab: {fileID: 0}
   isFull: 0
+  spriteRenderer: {fileID: 0}
 --- !u!212 &152726828
 SpriteRenderer:
   serializedVersion: 2
@@ -762,19 +766,19 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -919817693
+  m_SortingLayer: 2
+  m_SortingOrder: 44
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.043137256}
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!61 &152726829
 BoxCollider2D:
@@ -855,6 +859,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cell
   currentFoodPrefab: {fileID: 0}
   isFull: 0
+  spriteRenderer: {fileID: 0}
 --- !u!212 &233103334
 SpriteRenderer:
   serializedVersion: 2
@@ -900,19 +905,19 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -919817693
+  m_SortingLayer: 2
+  m_SortingOrder: 44
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.043137256}
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!4 &233103335
 Transform:
@@ -923,7 +928,7 @@ Transform:
   m_GameObject: {fileID: 233103332}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.09705, y: -4.7725596, z: 0}
+  m_LocalPosition: {x: 4.328, y: -4.709, z: 0}
   m_LocalScale: {x: 1.28702, y: 1.3276399, z: 0.6782}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1159,7 +1164,7 @@ Transform:
   m_GameObject: {fileID: 409844340}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.47, y: 0.24, z: 0}
+  m_LocalPosition: {x: -3.426, y: 0.242, z: 0}
   m_LocalScale: {x: 1.2870201, y: 1.3276443, z: 0.6782}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1225,6 +1230,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cell
   currentFoodPrefab: {fileID: 0}
   isFull: 0
+  spriteRenderer: {fileID: 0}
 --- !u!212 &409844344
 SpriteRenderer:
   serializedVersion: 2
@@ -1270,19 +1276,19 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -919817693
+  m_SortingLayer: 2
+  m_SortingOrder: 44
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.043137256}
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!1 &505396423
 GameObject:
@@ -1312,7 +1318,7 @@ Transform:
   m_GameObject: {fileID: 505396423}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.1000004, y: -1.4527617, z: 0}
+  m_LocalPosition: {x: 6.176, y: -1.443, z: 0}
   m_LocalScale: {x: 1.2870201, y: 1.3276443, z: 0.6782}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1332,6 +1338,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cell
   currentFoodPrefab: {fileID: 0}
   isFull: 0
+  spriteRenderer: {fileID: 0}
 --- !u!212 &505396426
 SpriteRenderer:
   serializedVersion: 2
@@ -1377,19 +1384,19 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -919817693
+  m_SortingLayer: 2
+  m_SortingOrder: 44
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.043137256}
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!61 &505396427
 BoxCollider2D:
@@ -1994,7 +2001,7 @@ Transform:
   m_GameObject: {fileID: 671818247}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.96295, y: 0.31256068, z: 0}
+  m_LocalPosition: {x: 6.176, y: 0.242, z: 0}
   m_LocalScale: {x: 1.2870201, y: 1.3276443, z: 0.6782}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2014,6 +2021,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cell
   currentFoodPrefab: {fileID: 0}
   isFull: 0
+  spriteRenderer: {fileID: 0}
 --- !u!212 &671818250
 SpriteRenderer:
   serializedVersion: 2
@@ -2059,19 +2067,19 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -919817693
+  m_SortingLayer: 2
+  m_SortingOrder: 44
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.043137256}
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!61 &671818251
 BoxCollider2D:
@@ -2152,6 +2160,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cell
   currentFoodPrefab: {fileID: 0}
   isFull: 0
+  spriteRenderer: {fileID: 0}
 --- !u!212 &730931857
 SpriteRenderer:
   serializedVersion: 2
@@ -2197,19 +2206,19 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -919817693
+  m_SortingLayer: 2
+  m_SortingOrder: 44
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.043137256}
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!4 &730931858
 Transform:
@@ -2220,7 +2229,7 @@ Transform:
   m_GameObject: {fileID: 730931855}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.24, y: -3.0725598, z: 0}
+  m_LocalPosition: {x: -5.31, y: -3.0725598, z: 0}
   m_LocalScale: {x: 1.28702, y: 1.3276399, z: 0.6782}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2418,6 +2427,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cell
   currentFoodPrefab: {fileID: 0}
   isFull: 0
+  spriteRenderer: {fileID: 0}
 --- !u!212 &792921563
 SpriteRenderer:
   serializedVersion: 2
@@ -2463,19 +2473,19 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -919817693
+  m_SortingLayer: 2
+  m_SortingOrder: 44
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.043137256}
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!4 &792921564
 Transform:
@@ -2486,7 +2496,7 @@ Transform:
   m_GameObject: {fileID: 792921561}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.0170503, y: -1.4825597, z: 0}
+  m_LocalPosition: {x: 4.328, y: -1.443, z: 0}
   m_LocalScale: {x: 1.28702, y: 1.3276399, z: 0.6782}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2571,6 +2581,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cell
   currentFoodPrefab: {fileID: 0}
   isFull: 0
+  spriteRenderer: {fileID: 0}
 --- !u!212 &826988141
 SpriteRenderer:
   serializedVersion: 2
@@ -2616,19 +2627,19 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -919817693
+  m_SortingLayer: 2
+  m_SortingOrder: 44
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.043137256}
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!4 &826988142
 Transform:
@@ -2639,7 +2650,7 @@ Transform:
   m_GameObject: {fileID: 826988139}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.27295, y: -4.70256, z: 0}
+  m_LocalPosition: {x: -5.31, y: -4.709, z: 0}
   m_LocalScale: {x: 1.28702, y: 1.3276399, z: 0.6782}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2719,7 +2730,7 @@ Transform:
   m_GameObject: {fileID: 911404024}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.09, y: -4.7, z: 0}
+  m_LocalPosition: {x: 6.176, y: -4.709, z: 0}
   m_LocalScale: {x: 1.28702, y: 1.3276399, z: 0.6782}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2739,6 +2750,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cell
   currentFoodPrefab: {fileID: 0}
   isFull: 0
+  spriteRenderer: {fileID: 0}
 --- !u!212 &911404027
 SpriteRenderer:
   serializedVersion: 2
@@ -2784,19 +2796,19 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -919817693
+  m_SortingLayer: 2
+  m_SortingOrder: 44
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.043137256}
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!61 &911404028
 BoxCollider2D:
@@ -2872,7 +2884,7 @@ Transform:
   m_GameObject: {fileID: 932603289}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.1300006, y: 0.25000012, z: 0}
+  m_LocalPosition: {x: 4.328, y: 0.242, z: 0}
   m_LocalScale: {x: 1.2870201, y: 1.3276443, z: 0.6782}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2892,6 +2904,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cell
   currentFoodPrefab: {fileID: 0}
   isFull: 0
+  spriteRenderer: {fileID: 0}
 --- !u!212 &932603292
 SpriteRenderer:
   serializedVersion: 2
@@ -2937,19 +2950,19 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -919817693
+  m_SortingLayer: 2
+  m_SortingOrder: 44
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.043137256}
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!61 &932603293
 BoxCollider2D:
@@ -3082,7 +3095,7 @@ Transform:
   m_GameObject: {fileID: 1039692079}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.6183, y: -0.0838, z: 0}
+  m_LocalPosition: {x: -3.6183, y: -0.08, z: 0}
   m_LocalScale: {x: 2.765649, y: 2.765649, z: 2.765649}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3116,7 +3129,7 @@ Transform:
   m_GameObject: {fileID: 1061946780}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.8900003, y: -1.4199991, z: 0}
+  m_LocalPosition: {x: 7.93295, y: -1.443, z: 0}
   m_LocalScale: {x: 1.28702, y: 1.3276399, z: 0.6782}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3136,6 +3149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cell
   currentFoodPrefab: {fileID: 0}
   isFull: 0
+  spriteRenderer: {fileID: 0}
 --- !u!212 &1061946783
 SpriteRenderer:
   serializedVersion: 2
@@ -3181,19 +3195,19 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -919817693
+  m_SortingLayer: 2
+  m_SortingOrder: 44
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.043137256}
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!61 &1061946784
 BoxCollider2D:
@@ -3389,6 +3403,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cell
   currentFoodPrefab: {fileID: 0}
   isFull: 0
+  spriteRenderer: {fileID: 0}
 --- !u!212 &1161622700
 SpriteRenderer:
   serializedVersion: 2
@@ -3434,19 +3449,19 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -919817693
+  m_SortingLayer: 2
+  m_SortingOrder: 44
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.043137256}
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1161622701
 Transform:
@@ -3457,7 +3472,7 @@ Transform:
   m_GameObject: {fileID: 1161622698}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.6329498, y: -1.4825599, z: 0}
+  m_LocalPosition: {x: -1.481, y: -1.443, z: 0}
   m_LocalScale: {x: 1.28702, y: 1.3276399, z: 0.6782}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3542,6 +3557,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cell
   currentFoodPrefab: {fileID: 0}
   isFull: 0
+  spriteRenderer: {fileID: 0}
 --- !u!212 &1197525716
 SpriteRenderer:
   serializedVersion: 2
@@ -3587,19 +3603,19 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -919817693
+  m_SortingLayer: 2
+  m_SortingOrder: 44
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.043137256}
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1197525717
 Transform:
@@ -3610,7 +3626,7 @@ Transform:
   m_GameObject: {fileID: 1197525714}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.6329498, y: -3.0725598, z: 0}
+  m_LocalPosition: {x: -1.481, y: -3.0725598, z: 0}
   m_LocalScale: {x: 1.28702, y: 1.3276399, z: 0.6782}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3690,7 +3706,7 @@ Transform:
   m_GameObject: {fileID: 1204504559}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.0829506, y: 1.9625607, z: 0}
+  m_LocalPosition: {x: 6.176, y: 1.947, z: 0}
   m_LocalScale: {x: 1.2870201, y: 1.3276443, z: 0.6782}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3710,6 +3726,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cell
   currentFoodPrefab: {fileID: 0}
   isFull: 0
+  spriteRenderer: {fileID: 0}
 --- !u!212 &1204504562
 SpriteRenderer:
   serializedVersion: 2
@@ -3755,19 +3772,19 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -919817693
+  m_SortingLayer: 2
+  m_SortingOrder: 44
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.043137256}
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!61 &1204504563
 BoxCollider2D:
@@ -3848,6 +3865,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cell
   currentFoodPrefab: {fileID: 0}
   isFull: 0
+  spriteRenderer: {fileID: 0}
 --- !u!212 &1213875072
 SpriteRenderer:
   serializedVersion: 2
@@ -3893,19 +3911,19 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -919817693
+  m_SortingLayer: 2
+  m_SortingOrder: 44
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.043137256}
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1213875073
 Transform:
@@ -3916,7 +3934,7 @@ Transform:
   m_GameObject: {fileID: 1213875070}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.6029496, y: -4.7425604, z: 0}
+  m_LocalPosition: {x: -1.481, y: -4.709, z: 0}
   m_LocalScale: {x: 1.28702, y: 1.3276399, z: 0.6782}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4001,6 +4019,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cell
   currentFoodPrefab: {fileID: 0}
   isFull: 0
+  spriteRenderer: {fileID: 0}
 --- !u!212 &1222474537
 SpriteRenderer:
   serializedVersion: 2
@@ -4046,19 +4065,19 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -919817693
+  m_SortingLayer: 2
+  m_SortingOrder: 44
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.043137256}
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1222474538
 Transform:
@@ -4069,7 +4088,7 @@ Transform:
   m_GameObject: {fileID: 1222474535}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.17705, y: -3.0525599, z: 0}
+  m_LocalPosition: {x: 2.404, y: -3.07256, z: 0}
   m_LocalScale: {x: 1.28702, y: 1.3276399, z: 0.6782}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4149,7 +4168,7 @@ Transform:
   m_GameObject: {fileID: 1230431683}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.2100005, y: 1.9000001, z: 0}
+  m_LocalPosition: {x: 2.404, y: 1.947, z: 0}
   m_LocalScale: {x: 1.2870201, y: 1.3276443, z: 0.6782}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4169,6 +4188,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cell
   currentFoodPrefab: {fileID: 0}
   isFull: 0
+  spriteRenderer: {fileID: 0}
 --- !u!212 &1230431686
 SpriteRenderer:
   serializedVersion: 2
@@ -4214,19 +4234,19 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -919817693
+  m_SortingLayer: 2
+  m_SortingOrder: 44
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.043137256}
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!61 &1230431687
 BoxCollider2D:
@@ -4307,6 +4327,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cell
   currentFoodPrefab: {fileID: 0}
   isFull: 0
+  spriteRenderer: {fileID: 0}
 --- !u!212 &1299085659
 SpriteRenderer:
   serializedVersion: 2
@@ -4352,19 +4373,19 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -919817693
+  m_SortingLayer: 2
+  m_SortingOrder: 44
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.043137256}
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1299085660
 Transform:
@@ -4375,7 +4396,7 @@ Transform:
   m_GameObject: {fileID: 1299085657}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.2270503, y: -1.5153222, z: 0}
+  m_LocalPosition: {x: 2.404, y: -1.443, z: 0}
   m_LocalScale: {x: 1.2870201, y: 1.3276443, z: 0.6782}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4460,6 +4481,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cell
   currentFoodPrefab: {fileID: 0}
   isFull: 0
+  spriteRenderer: {fileID: 0}
 --- !u!212 &1310296318
 SpriteRenderer:
   serializedVersion: 2
@@ -4505,19 +4527,19 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -919817693
+  m_SortingLayer: 2
+  m_SortingOrder: 44
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.043137256}
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1310296319
 Transform:
@@ -4528,7 +4550,7 @@ Transform:
   m_GameObject: {fileID: 1310296316}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.29705048, y: -3.0425599, z: 0}
+  m_LocalPosition: {x: 0.455, y: -3.07256, z: 0}
   m_LocalScale: {x: 1.28702, y: 1.3276399, z: 0.6782}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4608,7 +4630,7 @@ Transform:
   m_GameObject: {fileID: 1344756005}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.030001, y: -3.0499992, z: 0}
+  m_LocalPosition: {x: 7.93295, y: -3.07256, z: 0}
   m_LocalScale: {x: 1.28702, y: 1.3276399, z: 0.6782}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4628,6 +4650,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cell
   currentFoodPrefab: {fileID: 0}
   isFull: 0
+  spriteRenderer: {fileID: 0}
 --- !u!212 &1344756008
 SpriteRenderer:
   serializedVersion: 2
@@ -4673,19 +4696,19 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -919817693
+  m_SortingLayer: 2
+  m_SortingOrder: 44
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.043137256}
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!61 &1344756009
 BoxCollider2D:
@@ -4922,6 +4945,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cell
   currentFoodPrefab: {fileID: 0}
   isFull: 0
+  spriteRenderer: {fileID: 0}
 --- !u!212 &1426133216
 SpriteRenderer:
   serializedVersion: 2
@@ -4967,19 +4991,19 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -919817693
+  m_SortingLayer: 2
+  m_SortingOrder: 44
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.043137256}
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1426133217
 Transform:
@@ -4990,7 +5014,7 @@ Transform:
   m_GameObject: {fileID: 1426133214}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.21705, y: -4.7625604, z: 0}
+  m_LocalPosition: {x: 2.404, y: -4.709, z: 0}
   m_LocalScale: {x: 1.28702, y: 1.3276399, z: 0.6782}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5070,7 +5094,7 @@ Transform:
   m_GameObject: {fileID: 1431891814}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.26000023, y: 0.21000004, z: 0}
+  m_LocalPosition: {x: 0.455, y: 0.242, z: 0}
   m_LocalScale: {x: 1.2870201, y: 1.3276443, z: 0.6782}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5090,6 +5114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cell
   currentFoodPrefab: {fileID: 0}
   isFull: 0
+  spriteRenderer: {fileID: 0}
 --- !u!212 &1431891817
 SpriteRenderer:
   serializedVersion: 2
@@ -5135,19 +5160,19 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -919817693
+  m_SortingLayer: 2
+  m_SortingOrder: 44
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.043137256}
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!61 &1431891818
 BoxCollider2D:
@@ -5223,7 +5248,7 @@ Transform:
   m_GameObject: {fileID: 1532408340}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.5029497, y: -1.32256, z: 0}
+  m_LocalPosition: {x: -3.426, y: -1.443, z: 0}
   m_LocalScale: {x: 1.28702, y: 1.3276399, z: 0.6782}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5289,6 +5314,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cell
   currentFoodPrefab: {fileID: 0}
   isFull: 0
+  spriteRenderer: {fileID: 0}
 --- !u!212 &1532408344
 SpriteRenderer:
   serializedVersion: 2
@@ -5334,19 +5360,19 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -919817693
+  m_SortingLayer: 2
+  m_SortingOrder: 44
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.043137256}
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1532998916
 GameObject:
@@ -5376,7 +5402,7 @@ Transform:
   m_GameObject: {fileID: 1532998916}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.31, y: 0.21000004, z: 0}
+  m_LocalPosition: {x: -5.31, y: 0.242, z: 0}
   m_LocalScale: {x: 1.2870201, y: 1.3276443, z: 0.6782}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5396,6 +5422,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cell
   currentFoodPrefab: {fileID: 0}
   isFull: 0
+  spriteRenderer: {fileID: 0}
 --- !u!212 &1532998919
 SpriteRenderer:
   serializedVersion: 2
@@ -5441,19 +5468,19 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -919817693
+  m_SortingLayer: 2
+  m_SortingOrder: 44
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.043137256}
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!61 &1532998920
 BoxCollider2D:
@@ -5529,7 +5556,7 @@ Transform:
   m_GameObject: {fileID: 1541869648}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.27000046, y: 1.9100001, z: 0}
+  m_LocalPosition: {x: 0.455, y: 1.947, z: 0}
   m_LocalScale: {x: 1.2870201, y: 1.3276443, z: 0.6782}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5549,6 +5576,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cell
   currentFoodPrefab: {fileID: 0}
   isFull: 0
+  spriteRenderer: {fileID: 0}
 --- !u!212 &1541869651
 SpriteRenderer:
   serializedVersion: 2
@@ -5594,19 +5622,19 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -919817693
+  m_SortingLayer: 2
+  m_SortingOrder: 44
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.043137256}
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!61 &1541869652
 BoxCollider2D:
@@ -5682,7 +5710,7 @@ Transform:
   m_GameObject: {fileID: 1557557046}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.05, y: -2.9899993, z: 0}
+  m_LocalPosition: {x: 6.176, y: -3.07256, z: 0}
   m_LocalScale: {x: 1.28702, y: 1.3276399, z: 0.6782}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5702,6 +5730,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cell
   currentFoodPrefab: {fileID: 0}
   isFull: 0
+  spriteRenderer: {fileID: 0}
 --- !u!212 &1557557049
 SpriteRenderer:
   serializedVersion: 2
@@ -5747,19 +5776,19 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -919817693
+  m_SortingLayer: 2
+  m_SortingOrder: 44
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.043137256}
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!61 &1557557050
 BoxCollider2D:
@@ -5835,7 +5864,7 @@ Transform:
   m_GameObject: {fileID: 1608624588}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.6399996, y: 0.2800001, z: 0}
+  m_LocalPosition: {x: -1.481, y: 0.242, z: 0}
   m_LocalScale: {x: 1.2870201, y: 1.3276443, z: 0.6782}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5855,6 +5884,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cell
   currentFoodPrefab: {fileID: 0}
   isFull: 0
+  spriteRenderer: {fileID: 0}
 --- !u!212 &1608624591
 SpriteRenderer:
   serializedVersion: 2
@@ -5900,19 +5930,19 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -919817693
+  m_SortingLayer: 2
+  m_SortingOrder: 44
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.043137256}
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!61 &1608624592
 BoxCollider2D:
@@ -5988,7 +6018,7 @@ Transform:
   m_GameObject: {fileID: 1662646394}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.43295, y: -4.6725597, z: 0}
+  m_LocalPosition: {x: -3.426, y: -4.709, z: 0}
   m_LocalScale: {x: 1.28702, y: 1.3276399, z: 0.6782}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6054,6 +6084,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cell
   currentFoodPrefab: {fileID: 0}
   isFull: 0
+  spriteRenderer: {fileID: 0}
 --- !u!212 &1662646398
 SpriteRenderer:
   serializedVersion: 2
@@ -6099,19 +6130,19 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -919817693
+  m_SortingLayer: 2
+  m_SortingOrder: 44
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.043137256}
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1662685205
 GameObject:
@@ -6141,7 +6172,7 @@ Transform:
   m_GameObject: {fileID: 1662685205}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.3999996, y: -3.0425599, z: 0}
+  m_LocalPosition: {x: -3.426, y: -3.07256, z: 0}
   m_LocalScale: {x: 1.28702, y: 1.3276399, z: 0.6782}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6207,6 +6238,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cell
   currentFoodPrefab: {fileID: 0}
   isFull: 0
+  spriteRenderer: {fileID: 0}
 --- !u!212 &1662685209
 SpriteRenderer:
   serializedVersion: 2
@@ -6252,19 +6284,19 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -919817693
+  m_SortingLayer: 2
+  m_SortingOrder: 44
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.043137256}
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1713186066
 GameObject:
@@ -6299,6 +6331,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cell
   currentFoodPrefab: {fileID: 0}
   isFull: 0
+  spriteRenderer: {fileID: 0}
 --- !u!212 &1713186068
 SpriteRenderer:
   serializedVersion: 2
@@ -6344,19 +6377,19 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -919817693
+  m_SortingLayer: 2
+  m_SortingOrder: 44
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.043137256}
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1713186069
 Transform:
@@ -6367,7 +6400,7 @@ Transform:
   m_GameObject: {fileID: 1713186066}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.2270503, y: -4.70256, z: 0}
+  m_LocalPosition: {x: 0.455, y: -4.709, z: 0}
   m_LocalScale: {x: 1.28702, y: 1.3276399, z: 0.6782}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6562,7 +6595,7 @@ Transform:
   m_GameObject: {fileID: 1791758334}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.0600004, y: 1.9100001, z: 0}
+  m_LocalPosition: {x: 4.328, y: 1.947, z: 0}
   m_LocalScale: {x: 1.2870201, y: 1.3276443, z: 0.6782}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6582,6 +6615,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cell
   currentFoodPrefab: {fileID: 0}
   isFull: 0
+  spriteRenderer: {fileID: 0}
 --- !u!212 &1791758337
 SpriteRenderer:
   serializedVersion: 2
@@ -6627,19 +6661,19 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -919817693
+  m_SortingLayer: 2
+  m_SortingOrder: 44
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.043137256}
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!61 &1791758338
 BoxCollider2D:
@@ -6720,6 +6754,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cell
   currentFoodPrefab: {fileID: 0}
   isFull: 0
+  spriteRenderer: {fileID: 0}
 --- !u!212 &1793481591
 SpriteRenderer:
   serializedVersion: 2
@@ -6765,19 +6800,19 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -919817693
+  m_SortingLayer: 2
+  m_SortingOrder: 44
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.043137256}
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1793481592
 Transform:
@@ -6788,7 +6823,7 @@ Transform:
   m_GameObject: {fileID: 1793481589}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.34295, y: -1.3525599, z: 0}
+  m_LocalPosition: {x: -5.297, y: -1.443, z: 0}
   m_LocalScale: {x: 1.28702, y: 1.3276399, z: 0.6782}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6868,7 +6903,7 @@ Transform:
   m_GameObject: {fileID: 1931223276}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.0900002, y: 0.25000012, z: 0}
+  m_LocalPosition: {x: 2.404, y: 0.242, z: 0}
   m_LocalScale: {x: 1.2870201, y: 1.3276443, z: 0.6782}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6888,6 +6923,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cell
   currentFoodPrefab: {fileID: 0}
   isFull: 0
+  spriteRenderer: {fileID: 0}
 --- !u!212 &1931223279
 SpriteRenderer:
   serializedVersion: 2
@@ -6933,19 +6969,19 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -919817693
+  m_SortingLayer: 2
+  m_SortingOrder: 44
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.043137256}
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!61 &1931223280
 BoxCollider2D:
@@ -7295,6 +7331,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cell
   currentFoodPrefab: {fileID: 0}
   isFull: 0
+  spriteRenderer: {fileID: 0}
 --- !u!212 &1992317008
 SpriteRenderer:
   serializedVersion: 2
@@ -7340,19 +7377,19 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -919817693
+  m_SortingLayer: 2
+  m_SortingOrder: 44
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.043137256}
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1992317009
 Transform:
@@ -7363,7 +7400,7 @@ Transform:
   m_GameObject: {fileID: 1992317006}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.32704997, y: -1.3825598, z: 0}
+  m_LocalPosition: {x: 0.455, y: -1.443, z: 0}
   m_LocalScale: {x: 1.28702, y: 1.3276399, z: 0.6782}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7443,7 +7480,7 @@ Transform:
   m_GameObject: {fileID: 1992650111}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.3999996, y: 1.97, z: 0}
+  m_LocalPosition: {x: -3.426, y: 1.947, z: 0}
   m_LocalScale: {x: 1.2870201, y: 1.3276443, z: 0.6782}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7509,6 +7546,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cell
   currentFoodPrefab: {fileID: 0}
   isFull: 0
+  spriteRenderer: {fileID: 0}
 --- !u!212 &1992650115
 SpriteRenderer:
   serializedVersion: 2
@@ -7554,19 +7592,19 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -919817693
+  m_SortingLayer: 2
+  m_SortingOrder: 44
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.043137256}
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!1 &2008328584
 GameObject:
@@ -7596,7 +7634,7 @@ Transform:
   m_GameObject: {fileID: 2008328584}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.002951, y: 0.31256068, z: 0}
+  m_LocalPosition: {x: 7.93295, y: 0.242, z: 0}
   m_LocalScale: {x: 1.2870201, y: 1.3276443, z: 0.6782}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7616,6 +7654,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cell
   currentFoodPrefab: {fileID: 0}
   isFull: 0
+  spriteRenderer: {fileID: 0}
 --- !u!212 &2008328587
 SpriteRenderer:
   serializedVersion: 2
@@ -7661,19 +7700,19 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -919817693
+  m_SortingLayer: 2
+  m_SortingOrder: 44
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.043137256}
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!61 &2008328588
 BoxCollider2D:
@@ -7749,7 +7788,7 @@ Transform:
   m_GameObject: {fileID: 2066318711}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.9329505, y: 1.9725606, z: 0}
+  m_LocalPosition: {x: 7.9329505, y: 1.947, z: 0}
   m_LocalScale: {x: 1.2870201, y: 1.3276443, z: 0.6782}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7769,6 +7808,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cell
   currentFoodPrefab: {fileID: 0}
   isFull: 0
+  spriteRenderer: {fileID: 0}
 --- !u!212 &2066318714
 SpriteRenderer:
   serializedVersion: 2
@@ -7814,19 +7854,19 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -919817693
+  m_SortingLayer: 2
+  m_SortingOrder: 44
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.043137256}
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!61 &2066318715
 BoxCollider2D:

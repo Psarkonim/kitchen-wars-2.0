@@ -111,16 +111,17 @@ MonoBehaviour:
   range: 25
   inventoryActiveSprite: {fileID: 6366938296783752196, guid: f51e9d7d24dc88a4385b79f0b038fb97, type: 3}
   inventoryPassiveSprite: {fileID: -4323596404876059136, guid: 066ac02d7449ea94996a48217010c027, type: 3}
+  currentFoodPrefab: {fileID: 0}
   spriteRenderer: {fileID: 0}
   enemyLayer:
     serializedVersion: 2
     m_Bits: 256
   slowMultiplier: 0.5
-  flourVisualPrefab: {fileID: 5810184096933969016, guid: 94ae8de4cd86dde49857e83bf7ff36b4, type: 3}
   laneLength: 15
   cellLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 1024
+  _flourSprite: {fileID: -973050735589495420, guid: 7cf4bd7eafdbbfd4fa0a561df699426f, type: 3}
 --- !u!50 &2362178003227556775
 Rigidbody2D:
   serializedVersion: 5
