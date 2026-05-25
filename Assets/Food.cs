@@ -10,10 +10,9 @@ public abstract class Food : MonoBehaviour
     [SerializeField] public Sprite inventoryPassiveSprite;
     [SerializeField] protected GameObject currentFoodPrefab;
 
+    public float CurHp => curHp;
     protected Rigidbody2D rb;
     public SpriteRenderer spriteRenderer;
-
-    public float CurHp => curHp;
     public LayerMask enemyLayer;
 
     protected virtual void Awake()

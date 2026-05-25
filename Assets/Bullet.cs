@@ -21,7 +21,7 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.TryGetComponent<Rat>(out Rat rat))
+        if (collision.TryGetComponent<BasicRat>(out BasicRat rat))
         {
             rat.TakeDamage(damage);
             Destroy(gameObject);

@@ -12,6 +12,7 @@ public class InventoryCell : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Vector2 currentSize;
     public GameManager gameManager;
+    public GameObject Food => food;
     private Food foodComponent;
 
     private void Awake()
@@ -28,6 +29,7 @@ public class InventoryCell : MonoBehaviour
         UpdateAmountDisplay(); 
     }
 
+    public void IncreaseAmount() => amount += 1;
     private void UpdateAmountDisplay()
     {
         if (amountText)
@@ -67,11 +69,7 @@ public class InventoryCell : MonoBehaviour
     public void ConsumeFood()
     {
         amount--; 
-        UpdateAmountDisplay(); 
-        
-        spriteRenderer.sprite = amount <= 0 ? null : 
-            foodComponent.inventoryPassiveSprite;
-        
+        UpdateAmountDisplay();  
         SetSpriteSize();
     }
 

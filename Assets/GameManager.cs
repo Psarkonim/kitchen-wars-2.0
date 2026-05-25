@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
     public GameObject currentFood;
     public InventoryCell activeCell;
 
+    [SerializeField] public GameObject Inventory;
     [SerializeField] public Transform cells;
     [SerializeField] public LayerMask cellMask;
 
@@ -26,7 +27,7 @@ public class GameManager : MonoBehaviour
             {
                 Cell cell = hit.collider.GetComponent<Cell>();
 
-                if (cell != null)
+                if (cell != null && !cell.isFull)
                 {
                     cell.SetNewFood(currentFood);
 

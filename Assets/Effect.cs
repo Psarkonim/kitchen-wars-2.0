@@ -17,12 +17,12 @@ namespace Assets
             startTime = Time.time;
         }
 
-        public virtual void ApplyEffect(Rat rat)
+        public virtual void ApplyEffect(BasicRat rat)
         {
             throw new System.Exception();
         }
 
-        public virtual void RemoveEffect(Rat rat)
+        public virtual void RemoveEffect(BasicRat rat)
         {
             throw new System.Exception();
         }

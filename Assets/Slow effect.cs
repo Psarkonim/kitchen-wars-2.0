@@ -9,12 +9,12 @@ public class SlowEffect : Effect
     {
         this.slowFactor = slowFactor;
     }
-    public override void ApplyEffect(Rat rat)
+    public override void ApplyEffect(BasicRat rat)
     {
         rat.CurSpeed = rat.Speed * slowFactor;
     }
 
-    public override void RemoveEffect(Rat rat)
+    public override void RemoveEffect(BasicRat rat)
     {
         rat.CurSpeed = rat.Speed;
     }

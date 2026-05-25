@@ -6,6 +6,7 @@ public class Cell : MonoBehaviour
 {
     [SerializeField] private GameObject currentFoodPrefab;
     [SerializeField] public bool isFull = false;
+    private GameObject currentFood;
 
     [Header("Visual Settings")]
     [SerializeField] private SpriteRenderer spriteRenderer; 
@@ -26,7 +27,8 @@ public class Cell : MonoBehaviour
     {
         if (isFull) return;
 
-        Instantiate(foodPrefab, transform.position, Quaternion.identity, transform);
+        currentFood = Instantiate(foodPrefab, transform.position, Quaternion.identity, transform);
+        currentFoodPrefab = foodPrefab;
         isFull = true;
     }
 
@@ -35,6 +37,15 @@ public class Cell : MonoBehaviour
         if (spriteRenderer != null && newSprite != null)
         {
             spriteRenderer.sprite = newSprite;
+        }
+    }
+
+    public void Update()
+    {
+        if (isFull && currentFood == null)
+        {
+            currentFoodPrefab = null;
+            isFull = false;
         }
     }
 

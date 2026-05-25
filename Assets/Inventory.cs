@@ -4,14 +4,9 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    private InventoryCell[] cells;
-
+    [SerializeField]private InventoryCell[] cells;
+    public InventoryCell[] Cells { get { return cells; } }
     private void Awake()
     {  
-    }
-
-    void Update()
-    {
-        
     }
 }
