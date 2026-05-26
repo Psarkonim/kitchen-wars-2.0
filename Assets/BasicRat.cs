@@ -27,6 +27,7 @@ public class BasicRat : MonoBehaviour
 
     public float Speed => speed;
     public float CurSpeed { get => curSpeed; set => curSpeed = value; }
+    public bool IsKnockedBack { get; set; } = false;
 
     private void Awake()
     {
@@ -50,13 +51,18 @@ public class BasicRat : MonoBehaviour
     }
     void HandleMove()
     {
+        if (IsKnockedBack) 
+            return;
         if (!isAttacking)
             rb.linearVelocity = new Vector2(-curSpeed, rb.linearVelocity.y);    
     }
 
     void HandleEffect()
     {
-        curSpeed = speed;
+        if (!IsKnockedBack)
+        {
+            curSpeed = speed;
+        }
 
         var cellCollider = Physics2D.OverlapPoint(transform.position, LayerMask.GetMask("Cell"));
 
@@ -115,6 +121,12 @@ public class BasicRat : MonoBehaviour
 
         if (hit.collider != null)
         {
+            if (IsKnockedBack)
+            {
+                isAttacking = false;
+                return;
+            }
+            
             isAttacking = true;
             curSpeed = 0;
 
