@@ -80,8 +80,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -919817693
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 6321730316914564089, guid: ec0e2c4786112e24ba2aa6b182bc424c, type: 3}
@@ -159,7 +159,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.21, y: 0.27}
+    oldSize: {x: 0.84, y: 1.08}
     newSize: {x: 0.21, y: 0.27}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -190,4 +190,4 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   projectilePrefab: {fileID: 4741091283331102778, guid: 548129cfdb0d7894bb57ae9d62f528ee, type: 3}
-  fireRate: 0.25
+  fireRate: 1

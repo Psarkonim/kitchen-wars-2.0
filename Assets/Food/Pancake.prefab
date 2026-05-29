@@ -10,10 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2343423879067795655}
   - component: {fileID: 8255446031020921913}
-  - component: {fileID: 107206084215566477}
   - component: {fileID: 7810583543149088048}
   - component: {fileID: 5622860026782220723}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pancake
   m_TagString: Food
   m_Icon: {fileID: 0}
@@ -29,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 4910343241776138551}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.09, y: -3.51, z: 0}
+  m_LocalPosition: {x: -0.95, y: -4.23, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -80,47 +79,20 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -919817693
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 2255580716522117994, guid: 060106a321bf8724d911ece8e40d31d3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.25, y: 0.31}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!50 &107206084215566477
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4910343241776138551}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &7810583543149088048
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -158,14 +130,14 @@ BoxCollider2D:
   m_Offset: {x: 0.13730025, y: -0.00010006875}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.25, y: 0.31}
+    newSize: {x: 0.25, y: 0.31}
+    adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.27450085, y: 0.000100000005}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &5622860026782220723
 MonoBehaviour:
@@ -181,14 +153,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Pancake
   maxHp: 50
   curHp: 50
-  range: 0
+  range: 3
   inventoryActiveSprite: {fileID: 0}
   inventoryPassiveSprite: {fileID: 0}
   currentFoodPrefab: {fileID: 0}
   spriteRenderer: {fileID: 0}
   enemyLayer:
     serializedVersion: 2
-    m_Bits: 0
-  knockbackSpeed: 6
+    m_Bits: 256
+  knockbackSpeed: 8
   knockbackDuration: 0.5
   maxBounces: 3

@@ -14,7 +14,8 @@ public abstract class Food : MonoBehaviour
     protected Rigidbody2D rb;
     public SpriteRenderer spriteRenderer;
     public LayerMask enemyLayer;
-
+    public float MaxHpProperty => maxHp;
+    
     protected virtual void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -31,7 +32,14 @@ public abstract class Food : MonoBehaviour
             Die();
         }
     }
-
+    
+    public virtual void Heal(float amount)
+    {
+        curHp += amount;
+        if (curHp > maxHp)
+            curHp = maxHp;
+    }
+    
     public bool CheckIsEnemyInRange()
     {
         var isEnemyInRange = Physics2D.Raycast(transform.position, Vector2.right, range, enemyLayer);

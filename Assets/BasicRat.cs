@@ -1,14 +1,13 @@
-using Assets;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Unity.VisualScripting;
+using Assets;
 using UnityEngine;
-using UnityEngine.InputSystem.XInput;
 
 public class BasicRat : MonoBehaviour
 {
-    Rigidbody2D rb;
+    // Оставляем ОДИН Rigidbody2D для всего скрипта
+    private Rigidbody2D rb;
     
     [SerializeField] private Camera mainCamera;
     [SerializeField] private float speed;
@@ -23,11 +22,13 @@ public class BasicRat : MonoBehaviour
     [SerializeField] private LayerMask enemyLayer;
     [SerializeField] private bool isAttacking;
     [SerializeField] private GameObject rewardFood;
+    
     private List<Effect> effects;
-
+    private bool _isKnockedBack;
+    
     public float Speed => speed;
     public float CurSpeed { get => curSpeed; set => curSpeed = value; }
-    public bool IsKnockedBack { get; set; } = false;
+    public bool IsKnockedBack => _isKnockedBack;
 
     private void Awake()
     {
@@ -37,8 +38,19 @@ public class BasicRat : MonoBehaviour
         effects = new List<Effect>();
     }
 
-    void Start()
+    void Update()
     {
+        // Если крыса в состоянии отскока — ПОЛНОСТЬЮ выходим из Update.
+        // Она не должна ни атаковать, ни проверять границы, ни двигаться вперед.
+        if (_isKnockedBack) 
+        {
+            return; 
+        }
+
+        HandleAttack();
+        HandleInBounds();
+        HandleEffect();
+        HandleMove(); 
     }
 
     void HandleInBounds()
@@ -47,22 +59,17 @@ public class BasicRat : MonoBehaviour
     
         if (transform.position.x > rightEdge.x + 1f)
             Die();
-        
     }
+
     void HandleMove()
     {
-        if (IsKnockedBack) 
-            return;
         if (!isAttacking)
             rb.linearVelocity = new Vector2(-curSpeed, rb.linearVelocity.y);    
     }
 
     void HandleEffect()
     {
-        if (!IsKnockedBack)
-        {
-            curSpeed = speed;
-        }
+        curSpeed = speed;
 
         var cellCollider = Physics2D.OverlapPoint(transform.position, LayerMask.GetMask("Cell"));
 
@@ -78,8 +85,8 @@ public class BasicRat : MonoBehaviour
                         effects.Add(effect);
                     else
                     {
-                        var existingEffect = effects.FirstOrDefault(e =>  e.GetType() == effect.GetType());
-                        existingEffect.Refresh();
+                        var existingEffect = loyaltyEffect(effect);
+                        if (existingEffect != null) existingEffect.Refresh();
                     }
                 }
             }
@@ -98,13 +105,9 @@ public class BasicRat : MonoBehaviour
         }
     }
 
-    void Update()
+    private Effect loyaltyEffect(Effect effect)
     {
-        HandleAttack();
-        HandleInBounds();
-        HandleEffect();
-        HandleMove(); 
-        
+        return effects.FirstOrDefault(e => e.GetType() == effect.GetType());
     }
 
     void UpdateCanAttack()
@@ -121,12 +124,6 @@ public class BasicRat : MonoBehaviour
 
         if (hit.collider != null)
         {
-            if (IsKnockedBack)
-            {
-                isAttacking = false;
-                return;
-            }
-            
             isAttacking = true;
             curSpeed = 0;
 
@@ -156,6 +153,35 @@ public class BasicRat : MonoBehaviour
 
         if (curHp <= 0) 
             Die();
+    }
+    
+    public void TakeKnockback(Vector2 force, float duration)
+    {
+        if (_isKnockedBack) return;
+        StartCoroutine(KnockbackRoutine(force, duration));
+    }
+
+    private IEnumerator KnockbackRoutine(Vector2 force, float duration)
+    {
+        _isKnockedBack = true;
+        isAttacking = false;
+        curSpeed = speed; // Сбрасываем скорость атаки на дефолтную
+
+        if (rb != null)
+        {
+            // Принудительно «будим» физику крысы, если она уснула
+            rb.WakeUp(); 
+            rb.linearVelocity = force; 
+        }
+
+        yield return new WaitForSeconds(duration);
+
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector2.zero;
+        }
+
+        _isKnockedBack = false;
     }
 
     public void Die()
