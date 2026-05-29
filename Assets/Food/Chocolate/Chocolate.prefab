@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2523161899684085349}
   - component: {fileID: 1604070695580376654}
   - component: {fileID: 556761493485755940}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Chocolate
   m_TagString: Food
   m_Icon: {fileID: 0}
@@ -190,4 +190,13 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   projectilePrefab: {fileID: 4741091283331102778, guid: 548129cfdb0d7894bb57ae9d62f528ee, type: 3}
-  fireRate: 1
+  fireRate: 3
+  maxShots: 8
+  chocolateStates:
+  - {fileID: 4798486942641727482, guid: 540397f357ee0954fb0abb22e93d155d, type: 3}
+  - {fileID: 4848059873566669491, guid: 5c600179574a7e246b54ee70520ce6f7, type: 3}
+  - {fileID: 5945404002756112465, guid: 497b19adb3bc6c14eb941cb38efd56e4, type: 3}
+  - {fileID: 4902265932238086188, guid: 04206cc7fa6b692469388e7c92295d5f, type: 3}
+  - {fileID: -539066007860874221, guid: 1c9622f408b7ec543a5ae78c82519167, type: 3}
+  - {fileID: -7972542143683046682, guid: d9865e0275eb936419f7b4c38575bde7, type: 3}
+  - {fileID: -3572427308628159722, guid: 394e90457eeb10044babbd416eedb6c4, type: 3}
