@@ -68,20 +68,15 @@ public class InventoryCell : MonoBehaviour
 
     public void ConsumeFood()
     {
-        amount--; 
+        amount--;
+        spriteRenderer.sprite = foodComponent.inventoryPassiveSprite;
+        foodComponent = food.GetComponent<Food>();
         UpdateAmountDisplay();  
         SetSpriteSize();
     }
 
     void Update()
     {
-        if (!isEmpty || !food)
-            return;
-        isEmpty = false;
-        foodComponent = food.GetComponent<Food>();
-        spriteRenderer.sprite = foodComponent.inventoryPassiveSprite;
-        UpdateAmountDisplay(); 
-        SetSpriteSize();
     }
 
     private void SetSpriteSize()

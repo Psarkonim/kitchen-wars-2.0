@@ -47,7 +47,7 @@ public abstract class Food : MonoBehaviour
         return isEnemyInRange.collider is not null;
     }
 
-    protected virtual void Die()
+    public virtual void Die()
     {
         Destroy(gameObject);
     }

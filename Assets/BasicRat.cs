@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Assets;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BasicRat : MonoBehaviour
 {
@@ -56,9 +57,11 @@ public class BasicRat : MonoBehaviour
     void HandleInBounds()
     {
         Vector3 rightEdge = mainCamera.ScreenToWorldPoint(new Vector3(Screen.width, 0, -mainCamera.transform.position.z));
-    
+        var leftEdge = mainCamera.ScreenToWorldPoint(new Vector3(0, 0, -mainCamera.transform.position.z));
         if (transform.position.x > rightEdge.x + 1f)
             Die();
+        else if (transform.position.x < leftEdge.x - 1f)
+            SceneManager.LoadScene("DefeatVideo");
     }
 
     void HandleMove()

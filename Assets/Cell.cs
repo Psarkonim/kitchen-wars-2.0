@@ -16,6 +16,7 @@ public class Cell : MonoBehaviour
     [SerializeField] private List<Effect> effects = new List<Effect>();
 
     public List<Effect> Effects => effects;
+    public GameObject CurrentFoodPrefab => currentFoodPrefab;
 
     private void Awake()
     {
@@ -27,6 +28,14 @@ public class Cell : MonoBehaviour
     {
         if (isFull) return;
 
+        currentFood = Instantiate(foodPrefab, transform.position, Quaternion.identity, transform);
+        currentFoodPrefab = foodPrefab;
+        isFull = true;
+    }
+
+    public void SetNewRecipeFood(GameObject foodPrefab)
+    {
+        Destroy(currentFood);
         currentFood = Instantiate(foodPrefab, transform.position, Quaternion.identity, transform);
         currentFoodPrefab = foodPrefab;
         isFull = true;
