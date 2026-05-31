@@ -20,6 +20,7 @@ public class RatSpawner : MonoBehaviour
     [SerializeField] private bool loopWave = false;
 
     private bool _isSpawning;
+    public bool IsSpawnEnd => !_isSpawning;
 
     private void Start()
     {
@@ -49,6 +50,8 @@ public class RatSpawner : MonoBehaviour
 
                 if (entry.ratPrefab) 
                     Instantiate(entry.ratPrefab, transform.position, Quaternion.identity);
+
+                
             }
         } while (loopWave);
         _isSpawning = false;

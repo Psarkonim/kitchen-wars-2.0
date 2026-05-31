@@ -1,7 +1,9 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,10 +12,12 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] public GameObject Inventory;
     [SerializeField] public Transform cells;
+    [SerializeField] public List<RatSpawner> spawners;
     [SerializeField] public LayerMask cellMask;
+    [SerializeField] public LayerMask layerMask;
     [SerializeField] private List<Recipe> recipes = new List<Recipe>();
-    
-    private void Update()
+
+    private void HandlePlacement()
     {
         if (currentFood == null) return;
 
@@ -49,7 +53,7 @@ public class GameManager : MonoBehaviour
                         {
                             if (recipe.TryMakeRecipe(currentFood, cell.CurrentFoodPrefab, out var result))
                             {
-                                
+
                                 cell.SetNewRecipeFood(result);
 
                                 if (activeCell != null)
@@ -65,6 +69,32 @@ public class GameManager : MonoBehaviour
                     }
                 }
             }
+        }
+    }
+
+    private bool CheckIfLevelIsEnd()
+    {
+        BasicRat[] enemies = FindObjectsByType<BasicRat>(FindObjectsSortMode.None);
+
+        if (spawners.All(spawner => spawner.IsSpawnEnd) && enemies.Length == 0) return true;
+
+        return false;
+    }
+
+    private void Update()
+    {
+        var sceneName = SceneManager.GetActiveScene().name;
+
+        if (sceneName.Substring(0, 5) != "Level") return;
+        HandlePlacement();
+
+        if (CheckIfLevelIsEnd())
+        {
+            var nextLevelNumber = int.Parse(sceneName.Last().ToString()) + 1;
+
+            PlayerPrefs.SetInt("Current level", nextLevelNumber);
+            PlayerPrefs.Save();
+            SceneManager.LoadScene("Level" + nextLevelNumber.ToString());
         }
     }
 }

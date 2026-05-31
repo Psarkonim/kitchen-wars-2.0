@@ -1693,7 +1693,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d31ab28ba0741c7b242bd8b2f189939, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RatSpawner
-  waveQueue: []
+  waveQueue:
+  - ratPrefab: {fileID: 1741352504946120824, guid: ac3f1c247abb20e4c9d7d993d8f38cc6, type: 3}
+    delayBeforeSpawn: 0
   autoStart: 1
   loopWave: 0
 --- !u!212 &549526962
@@ -3352,7 +3354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RatSpawner
   waveQueue:
-  - ratPrefab: {fileID: 8589425135716764971, guid: 7c371d06a3f1cae4d9af10af8239a333, type: 3}
+  - ratPrefab: {fileID: 1741352504946120824, guid: 3387a3da8cbdc704a8a5ef5beae8c3eb, type: 3}
     delayBeforeSpawn: 0
   autoStart: 1
   loopWave: 0

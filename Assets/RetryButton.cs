@@ -6,6 +6,7 @@ public class RetryButton : MonoBehaviour
 {
     private void OnMouseDown()
     {
-        SceneManager.LoadScene("Level1");
+        var currentLevel = PlayerPrefs.HasKey("Current level") ? 1 : PlayerPrefs.GetInt("Current level");
+        SceneManager.LoadScene("Level" + currentLevel.ToString());
     }
 }

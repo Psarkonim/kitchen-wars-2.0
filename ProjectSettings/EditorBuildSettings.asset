@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DefeatVideo.unity
     guid: 2fe8ed02ddfe27f49af3704d4422347c
+  - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: 17b8879d9dda2164b8cbcc9f8dce41ab
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
