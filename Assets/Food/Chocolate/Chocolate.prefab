@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2523161899684085349}
   - component: {fileID: 1604070695580376654}
   - component: {fileID: 556761493485755940}
-  m_Layer: 3
+  m_Layer: 11
   m_Name: Chocolate
   m_TagString: Food
   m_Icon: {fileID: 0}

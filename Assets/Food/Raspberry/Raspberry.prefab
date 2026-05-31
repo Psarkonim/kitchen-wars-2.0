@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8004001894611516896}
   - component: {fileID: 7004343916574039840}
   - component: {fileID: -3674693350815845318}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: Raspberry
   m_TagString: Food
   m_Icon: {fileID: 0}

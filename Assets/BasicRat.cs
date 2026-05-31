@@ -31,7 +31,7 @@ public class BasicRat : MonoBehaviour
     public float CurSpeed { get => curSpeed; set => curSpeed = value; }
     public bool IsKnockedBack => _isKnockedBack;
 
-    private void Awake()
+    protected virtual void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         curSpeed = speed;
@@ -39,7 +39,7 @@ public class BasicRat : MonoBehaviour
         effects = new List<Effect>();
     }
 
-    void Update()
+    protected void Update()
     {
         // Если крыса в состоянии отскока — ПОЛНОСТЬЮ выходим из Update.
         // Она не должна ни атаковать, ни проверять границы, ни двигаться вперед.

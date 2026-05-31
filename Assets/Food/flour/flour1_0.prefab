@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5717375500791362289}
   - component: {fileID: 2362178003227556775}
   - component: {fileID: -4989009125463679758}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: flour1_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,6 +118,7 @@ MonoBehaviour:
     m_Bits: 256
   slowMultiplier: 0.5
   laneLength: 15
+  duration: 5
   cellLayer:
     serializedVersion: 2
     m_Bits: 1024

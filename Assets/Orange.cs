@@ -19,6 +19,5 @@ public class Orange : Food
             rb.linearVelocity = new Vector2(rollSpeed, rb.linearVelocity.y);
         if (transform.position.x >= destroyXPosition)
             Die();
-        
     }
 }
