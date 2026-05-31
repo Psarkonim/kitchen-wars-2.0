@@ -1693,13 +1693,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d31ab28ba0741c7b242bd8b2f189939, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RatSpawner
-  waveQueue:
-  - ratPrefab: {fileID: 8589425135716764971, guid: 1061178c2717a97478646e9d813098ed, type: 3}
-    delayBeforeSpawn: 4
-  - ratPrefab: {fileID: 1741352504946120824, guid: df9558aab84d64149b6cc7c43e9f89a7, type: 3}
-    delayBeforeSpawn: 7
-  - ratPrefab: {fileID: 1741352504946120824, guid: aea49ce06e237a4438b605488ca553ec, type: 3}
-    delayBeforeSpawn: 10
+  waveQueue: []
   autoStart: 1
   loopWave: 0
 --- !u!212 &549526962
@@ -2388,12 +2382,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RatSpawner
   waveQueue:
-  - ratPrefab: {fileID: 1741352504946120824, guid: 0eacd34f2eb0e2c4d86117f0055de2ab, type: 3}
+  - ratPrefab: {fileID: 2466497841162527271, guid: 0d21108b9bfc73140afe559d0aa7ba8e, type: 3}
     delayBeforeSpawn: 4
-  - ratPrefab: {fileID: 1741352504946120824, guid: df9558aab84d64149b6cc7c43e9f89a7, type: 3}
-    delayBeforeSpawn: 7
-  - ratPrefab: {fileID: 1741352504946120824, guid: df9558aab84d64149b6cc7c43e9f89a7, type: 3}
-    delayBeforeSpawn: 10
   autoStart: 1
   loopWave: 0
 --- !u!212 &763254167
@@ -3362,14 +3352,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RatSpawner
   waveQueue:
-  - ratPrefab: {fileID: 1741352504946120824, guid: df9558aab84d64149b6cc7c43e9f89a7, type: 3}
-    delayBeforeSpawn: 2
-  - ratPrefab: {fileID: 1741352504946120824, guid: df9558aab84d64149b6cc7c43e9f89a7, type: 3}
-    delayBeforeSpawn: 2
-  - ratPrefab: {fileID: 1741352504946120824, guid: df9558aab84d64149b6cc7c43e9f89a7, type: 3}
-    delayBeforeSpawn: 2
-  - ratPrefab: {fileID: 1741352504946120824, guid: df9558aab84d64149b6cc7c43e9f89a7, type: 3}
-    delayBeforeSpawn: 2
+  - ratPrefab: {fileID: 8589425135716764971, guid: 7c371d06a3f1cae4d9af10af8239a333, type: 3}
+    delayBeforeSpawn: 0
   autoStart: 1
   loopWave: 0
 --- !u!212 &1107092444
@@ -6558,15 +6542,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d31ab28ba0741c7b242bd8b2f189939, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RatSpawner
-  waveQueue:
-  - ratPrefab: {fileID: 2466497841162527271, guid: 0d21108b9bfc73140afe559d0aa7ba8e, type: 3}
-    delayBeforeSpawn: 2
-  - ratPrefab: {fileID: 1741352504946120824, guid: 5ef0465054e22cb418fe6e7377f1af81, type: 3}
-    delayBeforeSpawn: 2
-  - ratPrefab: {fileID: 1741352504946120824, guid: df9558aab84d64149b6cc7c43e9f89a7, type: 3}
-    delayBeforeSpawn: 2
-  - ratPrefab: {fileID: 1741352504946120824, guid: df9558aab84d64149b6cc7c43e9f89a7, type: 3}
-    delayBeforeSpawn: 2
+  waveQueue: []
   autoStart: 1
   loopWave: 0
 --- !u!212 &1781180667
@@ -7291,13 +7267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d31ab28ba0741c7b242bd8b2f189939, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RatSpawner
-  waveQueue:
-  - ratPrefab: {fileID: 1741352504946120824, guid: c286038d560213641bd45cdea5e3143f, type: 3}
-    delayBeforeSpawn: 4
-  - ratPrefab: {fileID: 1741352504946120824, guid: 6cbc19ff601b206478157449b6c3f5bd, type: 3}
-    delayBeforeSpawn: 7
-  - ratPrefab: {fileID: 1741352504946120824, guid: df9558aab84d64149b6cc7c43e9f89a7, type: 3}
-    delayBeforeSpawn: 10
+  waveQueue: []
   autoStart: 1
   loopWave: 0
 --- !u!212 &1990610204

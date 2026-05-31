@@ -1,3 +1,4 @@
+using UnityEditor.Animations;
 using UnityEngine;
 
 public class FatRat : BasicRat
@@ -10,10 +11,13 @@ public class FatRat : BasicRat
     [SerializeField] private GameObject explosionPrefab;
 
     SpriteRenderer spriteRenderer;
+    Animator animator;
+
     protected override void Awake()
     {
         base.Awake();
-        SpriteRenderer spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        animator = GetComponentInChildren<Animator>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -21,10 +25,16 @@ public class FatRat : BasicRat
         if (collision.TryGetComponent<Bullet>(out Bullet _))
         {
             bulletsIn += 1;
+            animator.SetInteger("BulletIn", bulletsIn);
 
-            if (bulletsIn == 2) spriteRenderer.sprite = firstStage;
-            else if (bulletsIn == 4) spriteRenderer.sprite = secondStage;
-            else if (bulletsIn == 6) spriteRenderer.sprite = thirdStage;
+            if (bulletsIn == 3)
+            {
+                spriteRenderer.sprite = secondStage;
+            }
+            else if (bulletsIn == 6)
+            {
+                spriteRenderer.sprite = thirdStage;
+            }
             else if (bulletsIn == 8)
             {
                 var explosion = Instantiate(explosionPrefab, transform.position, Quaternion.identity);

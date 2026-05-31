@@ -5,12 +5,12 @@ public class ToothpickRat : BasicRat
     [SerializeField] private GameObject mouseToSpawn;
 
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
 
-        if (collision.TryGetComponent<Orange>(out Orange _))
+        if (collision.gameObject.TryGetComponent<Orange>(out Orange _))
         {
-            Instantiate(mouseToSpawn, rb.position, Quaternion.identity);
+            Instantiate(mouseToSpawn, rb.position + new Vector2(-1.1f, 0), Quaternion.identity);
             Die();
         }
     }

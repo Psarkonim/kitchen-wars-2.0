@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 1214942897762014067}
   - component: {fileID: 4481335699130946604}
   m_Layer: 8
-  m_Name: FatMouseWithNoDrop
+  m_Name: FatMouseWithRaspberryDrop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -156,7 +156,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 2048
   isAttacking: 0
-  rewardFood: {fileID: 0}
+  rewardFood: {fileID: 8131681198335183678, guid: 5f400dab5ef91b04ebf861d65e4bb0a9, type: 3}
   bulletsIn: 0
   bulletsToExplode: 8
   firstStage: {fileID: 1491461037959541626, guid: c4b093872547387499369e4bd72ad933, type: 3}
