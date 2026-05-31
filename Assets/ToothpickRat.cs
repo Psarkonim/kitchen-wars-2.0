@@ -7,9 +7,10 @@ public class ToothpickRat : BasicRat
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+
         if (collision.TryGetComponent<Orange>(out Orange _))
         {
-            Instantiate(mouseToSpawn, transform.position, Quaternion.identity);
+            Instantiate(mouseToSpawn, rb.position, Quaternion.identity);
             Die();
         }
     }

@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class BasicRat : MonoBehaviour
 {
     // Оставляем ОДИН Rigidbody2D для всего скрипта
-    private Rigidbody2D rb;
+    protected Rigidbody2D rb;
     
     [SerializeField] private Camera mainCamera;
     [SerializeField] private float speed;
@@ -20,7 +20,7 @@ public class BasicRat : MonoBehaviour
     [SerializeField] private bool canAttack;
     [SerializeField] private float lastAttackTime = 0f;
     [SerializeField] private float range;
-    [SerializeField] private LayerMask enemyLayer;
+    [SerializeField] protected LayerMask enemyLayer;
     [SerializeField] private bool isAttacking;
     [SerializeField] private GameObject rewardFood;
     
