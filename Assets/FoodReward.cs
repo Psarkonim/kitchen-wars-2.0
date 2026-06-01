@@ -19,11 +19,13 @@ public class FoodReward : MonoBehaviour
     private void OnMouseDown()
     {
         var inventory = gameManager.Inventory.GetComponent<Inventory>();
-        
+        Debug.Log("Collide");
         foreach (var item in inventory.Cells)
         {
-            if (item.Food.name == Food.name)
+            Debug.Log(item.Food.name);
+            if (ReferenceEquals(item.Food, Food))
             {
+                Debug.Log("Match");
                 item.IncreaseAmount();
                 Destroy(gameObject);
             }

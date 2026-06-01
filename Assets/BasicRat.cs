@@ -120,8 +120,6 @@ public class BasicRat : MonoBehaviour
 
     protected void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Enter");
-
         if (collision.TryGetComponent<Cell>(out var cell))
         {
             currentCell = cell;
