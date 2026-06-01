@@ -53,12 +53,13 @@ MonoBehaviour:
   inventoryActiveSprite: {fileID: 0}
   inventoryPassiveSprite: {fileID: 0}
   currentFoodPrefab: {fileID: 0}
+  currentCell: {fileID: 0}
   spriteRenderer: {fileID: 0}
   enemyLayer:
     serializedVersion: 2
     m_Bits: 0
   buffRadius: 3
-  speedBuffMultiplier: 0.5
+  speedBuffMultiplier: 1.5
 --- !u!212 &906568572411114792
 SpriteRenderer:
   serializedVersion: 2

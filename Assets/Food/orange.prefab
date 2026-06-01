@@ -161,12 +161,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa254e5c846342b2b3a58fa1780c691e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Apple
-  maxHp: 200
-  curHp: 200
-  range: 100
+  maxHp: 100
+  curHp: 100
+  range: 5
   inventoryActiveSprite: {fileID: 5051390380506208091, guid: bbee06956ab0d77449b9c83a85537a4a, type: 3}
   inventoryPassiveSprite: {fileID: -4184096806510656562, guid: c36d817f72528914aa4ff1f41334f7e5, type: 3}
   currentFoodPrefab: {fileID: 0}
+  currentCell: {fileID: 0}
   spriteRenderer: {fileID: 0}
   enemyLayer:
     serializedVersion: 2

@@ -46,8 +46,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 328e5d9f5f3743e19b682bfd94aaecea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Milk
-  maxHp: 100
-  curHp: 100
+  maxHp: 40
+  curHp: 40
   range: 0
   inventoryActiveSprite: {fileID: 1736428684734924697, guid: c99ee2963f4e16f4b873991c02633de6, type: 3}
   inventoryPassiveSprite: {fileID: 8630855992080981333, guid: f1f535c8b48527847804b27f89fbcb3a, type: 3}
@@ -58,7 +58,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   healAmount: 15
-  healInterval: 2
+  healInterval: 7
   healRadius: 2
   healVisualPrefab: {fileID: 0}
 --- !u!61 &4955453827544119387

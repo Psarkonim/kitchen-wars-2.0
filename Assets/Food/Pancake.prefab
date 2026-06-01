@@ -157,10 +157,11 @@ MonoBehaviour:
   inventoryActiveSprite: {fileID: 0}
   inventoryPassiveSprite: {fileID: 0}
   currentFoodPrefab: {fileID: 0}
+  currentCell: {fileID: 0}
   spriteRenderer: {fileID: 0}
   enemyLayer:
     serializedVersion: 2
     m_Bits: 256
   knockbackSpeed: 8
   knockbackDuration: 0.5
-  maxBounces: 3
+  maxBounces: 8

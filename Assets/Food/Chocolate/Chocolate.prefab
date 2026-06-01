@@ -181,7 +181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Chocolate
   maxHp: 20
   curHp: 20
-  range: 10
+  range: 8
   inventoryActiveSprite: {fileID: -5689016276975733891, guid: 03f96608119f22d4fb92585fd6ff6247, type: 3}
   inventoryPassiveSprite: {fileID: 4681573355185694843, guid: bf8b4caa8fcf58f45b44bb4ed0392e59, type: 3}
   currentFoodPrefab: {fileID: 0}
@@ -191,7 +191,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   projectilePrefab: {fileID: 4741091283331102778, guid: 548129cfdb0d7894bb57ae9d62f528ee, type: 3}
-  fireRate: 3
+  fireRate: 1
   maxShots: 8
   chocolateStates:
   - {fileID: 4798486942641727482, guid: 540397f357ee0954fb0abb22e93d155d, type: 3}
@@ -202,4 +202,4 @@ MonoBehaviour:
   - {fileID: -7972542143683046682, guid: d9865e0275eb936419f7b4c38575bde7, type: 3}
   - {fileID: -3572427308628159722, guid: 394e90457eeb10044babbd416eedb6c4, type: 3}
   attackInterval: 1.5
-  bulletDamage: 5
+  bulletDamage: 20

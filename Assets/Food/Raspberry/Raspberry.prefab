@@ -111,8 +111,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cb1255a58a544579c017d2c74574b98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Food_as_shooting
-  maxHp: 100
-  curHp: 100
+  maxHp: 50
+  curHp: 50
   range: 100
   inventoryActiveSprite: {fileID: -785288920422619940, guid: 5d08efc0268b08543b780f0eb3033000, type: 3}
   inventoryPassiveSprite: {fileID: -2199644369033133681, guid: 3e794af4f0187d84194e68f75c9f1b34, type: 3}
@@ -125,7 +125,7 @@ MonoBehaviour:
   simpleBullet: {fileID: 8917940813283496913, guid: e7eca4bc436b74e469d4dbcc2b37ce38, type: 3}
   cooldown: 3
   canAttack: 0
-  bulletDamage: 200
+  bulletDamage: 10
   shootSprite: {fileID: 0}
   changeDuration: 0.15
 --- !u!212 &-3674693350815845318

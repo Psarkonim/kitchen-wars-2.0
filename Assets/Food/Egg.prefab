@@ -47,12 +47,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5fc1b756413459a9f8f6f2578cb784a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Egg
-  maxHp: 200
-  curHp: 200
+  maxHp: 100
+  curHp: 100
   range: 0
   inventoryActiveSprite: {fileID: -9030538457830046345, guid: 6eaca30e045d95c48afdd2e40d57eb72, type: 3}
   inventoryPassiveSprite: {fileID: 7998485954818072254, guid: b6c09588a2c9375488315be64633d00a, type: 3}
   currentFoodPrefab: {fileID: 0}
+  currentCell: {fileID: 0}
   spriteRenderer: {fileID: 0}
   enemyLayer:
     serializedVersion: 2

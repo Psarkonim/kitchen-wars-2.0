@@ -53,14 +53,15 @@ MonoBehaviour:
   inventoryActiveSprite: {fileID: 7122116598325738017, guid: 2ff52dcc1926f914aaffc16f0506171c, type: 3}
   inventoryPassiveSprite: {fileID: -4971996867036443040, guid: 355c4d48d6dc5714fb434ee2d3ae77ed, type: 3}
   currentFoodPrefab: {fileID: 3696493590274641912, guid: 03e9dcfe79bd35b4096acb4d95fe8391, type: 3}
+  currentCell: {fileID: 0}
   spriteRenderer: {fileID: 545402389785603315}
   enemyLayer:
     serializedVersion: 2
     m_Bits: 256
   simpleBullet: {fileID: 8917940813283496913, guid: e7eca4bc436b74e469d4dbcc2b37ce38, type: 3}
-  cooldown: 2
+  cooldown: 2.5
   canAttack: 0
-  bulletDamage: 4
+  bulletDamage: 15
   shootSprite: {fileID: 0}
   changeDuration: 0.15
   chocoBulletPrefab: {fileID: 3696493590274641912, guid: 03e9dcfe79bd35b4096acb4d95fe8391, type: 3}

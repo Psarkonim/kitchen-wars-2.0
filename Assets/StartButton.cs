@@ -5,6 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class StartButton : MonoBehaviour
 {
+    private SceneTransition sceneTransition;
+
+    private void Start()
+    {
+        sceneTransition = FindFirstObjectByType<SceneTransition>();
+    }
+
     private void OnMouseDown()
     {
         PlayerPrefs.SetInt("Current level", 1);
@@ -14,7 +21,6 @@ public class StartButton : MonoBehaviour
 
         if (!PlayerPrefs.HasKey("SoundVolume"))
             PlayerPrefs.SetFloat("SoundVolume", 1.0f);
-
 
         SceneManager.LoadScene("Level" + PlayerPrefs.GetInt("Current level").ToString());
     }
