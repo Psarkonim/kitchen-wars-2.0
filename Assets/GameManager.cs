@@ -6,7 +6,31 @@ using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
-{
+{   
+    // Статическая ссылка на единственный экземпляр менеджера в игре
+    public static GameManager Instance { get; private set; }
+
+    private void Awake()
+    {
+        // 1. Настраиваем синглтон (если делали на прошлом шаге)
+        Instance = this;
+
+        // 2. Находим ВСЕ ячейки инвентаря внутри объекта Inventory
+        if (Inventory != null)
+        {
+            InventoryCell[] cellsInInventory = Inventory.GetComponentsInChildren<InventoryCell>(true);
+            
+            foreach (var cell in cellsInInventory)
+            {
+                cell.gameManager = this; // Вручную передаем СЕБЯ каждой ячейке!
+                Debug.Log($"[GameManager] Успешно привязал себя к ячейке: {cell.gameObject.name}");
+            }
+        }
+        else
+        {
+            Debug.LogError("[GameManager] Объект Inventory не привязан в Инспекторе!");
+        }
+    }
     public GameObject currentFood;
     public InventoryCell activeCell;
 

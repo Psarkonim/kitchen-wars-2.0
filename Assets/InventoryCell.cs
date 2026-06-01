@@ -19,7 +19,9 @@ public class InventoryCell : MonoBehaviour
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         currentSize = transform.localScale;
-        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+
+        // ПОЛНОСТЬЮ УДАЛИЛИ ОТСЮДА ПОИСК GAMEMANAGER!
+        // Теперь менеджер сам придет и запишет себя в переменную ниже.
 
         if (food != null)
         {
@@ -69,8 +71,18 @@ public class InventoryCell : MonoBehaviour
     public void ConsumeFood()
     {
         amount--;
-        spriteRenderer.sprite = foodComponent.inventoryPassiveSprite;
-        foodComponent = food.GetComponent<Food>();
+        
+        // Проверяем, что food и компонент на месте, перед тем как менять спрайт
+        if (foodComponent != null && spriteRenderer != null)
+        {
+            spriteRenderer.sprite = foodComponent.inventoryPassiveSprite;
+        }
+
+        if (food != null)
+        {
+            foodComponent = food.GetComponent<Food>();
+        }
+
         UpdateAmountDisplay();  
         SetSpriteSize();
     }

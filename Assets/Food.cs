@@ -9,7 +9,8 @@ public abstract class Food : MonoBehaviour
     [SerializeField] public Sprite inventoryActiveSprite;
     [SerializeField] public Sprite inventoryPassiveSprite;
     [SerializeField] protected GameObject currentFoodPrefab;
-
+    [HideInInspector] public Cell currentCell;
+    
     public float CurHp => curHp;
     protected Rigidbody2D rb;
     public SpriteRenderer spriteRenderer;
