@@ -115,7 +115,7 @@ MonoBehaviour:
   speed: 0.7
   maxHp: 100
   curHp: 100
-  damage: 50
+  damage: 40
   curSpeed: 0.7
   cooldown: 3
   canAttack: 1

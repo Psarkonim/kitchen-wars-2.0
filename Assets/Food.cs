@@ -22,7 +22,12 @@ public abstract class Food : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         curHp = maxHp;
     }
-
+    
+    public void Heal(float amount) 
+    {
+        curHp = Mathf.Min(CurHp + amount, maxHp);
+    }
+    
     public virtual void TakeDamage(float damage)
     {
         curHp -= damage;
@@ -31,13 +36,6 @@ public abstract class Food : MonoBehaviour
         {
             Die();
         }
-    }
-    
-    public virtual void Heal(float amount)
-    {
-        curHp += amount;
-        if (curHp > maxHp)
-            curHp = maxHp;
     }
     
     public bool CheckIsEnemyInRange()

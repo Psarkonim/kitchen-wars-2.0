@@ -6,9 +6,15 @@ namespace Assets
     {
         [Header("Атака")]
         [SerializeField] private GameObject simpleBullet;
-        [SerializeField] private float cooldown;
+        [SerializeField] public float cooldown;
         [SerializeField] private bool canAttack;
-    
+        
+        [Header("Attack Settings")]
+        public float attackInterval = 1.5f;
+        
+        [Header("Damage Settings")]
+        public float bulletDamage = 4f; 
+        
         private float lastAttackTime;
 
         protected override void Awake()
@@ -37,10 +43,16 @@ namespace Assets
 
             canAttack = false;
             lastAttackTime = Time.time;
-        
+
             var position = transform.position;
             position.x += spriteRenderer.bounds.extents.x + 0.1f; 
-            Instantiate(simpleBullet, position, Quaternion.identity);
+
+            GameObject bullet = Instantiate(simpleBullet, position, Quaternion.identity);
+            
+            if (bullet.TryGetComponent<Bullet>(out Bullet bulletScript))
+            {
+                bulletScript.SetDamage(bulletDamage);
+            }
         }
     }
 }
