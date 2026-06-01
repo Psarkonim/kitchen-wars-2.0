@@ -94,7 +94,7 @@ public class RaspberryCocktail : Food
         }
     }
 
-    protected override void Die()
+    public override void Die()
     {
         foreach (Chocolate choc in _buffedChocolates)
         {
