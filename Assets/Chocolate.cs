@@ -4,13 +4,16 @@ public class Chocolate : Food
 {
     [Header("Chocolate Settings")]
     [SerializeField] private GameObject projectilePrefab; 
-    [SerializeField] private float fireRate = 1f;        
+    [SerializeField] public float fireRate = 1f;       
     [SerializeField] private int maxShots = 8; 
 
     [Header("Visual States")]
     [SerializeField] private Sprite[] chocolateStates; 
     private SpriteRenderer _spriteRenderer;
-
+    
+    [Header("Attack Settings")]
+    public float attackInterval = 1.5f;
+    
     private int _shotsLeft;                       
     private float _nextFireTime = 0f;                   
 

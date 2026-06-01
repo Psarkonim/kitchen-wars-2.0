@@ -6,9 +6,12 @@ namespace Assets
     {
         [Header("Атака")]
         [SerializeField] private GameObject simpleBullet;
-        [SerializeField] private float cooldown;
+        [SerializeField] public float cooldown;
         [SerializeField] private bool canAttack;
-    
+        
+        [Header("Attack Settings")]
+        public float attackInterval = 1.5f;
+        
         private float lastAttackTime;
 
         protected override void Awake()
