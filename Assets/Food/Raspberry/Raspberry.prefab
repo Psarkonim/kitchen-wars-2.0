@@ -117,6 +117,7 @@ MonoBehaviour:
   inventoryActiveSprite: {fileID: -785288920422619940, guid: 5d08efc0268b08543b780f0eb3033000, type: 3}
   inventoryPassiveSprite: {fileID: -2199644369033133681, guid: 3e794af4f0187d84194e68f75c9f1b34, type: 3}
   currentFoodPrefab: {fileID: 0}
+  currentCell: {fileID: 0}
   spriteRenderer: {fileID: 0}
   enemyLayer:
     serializedVersion: 2
@@ -124,6 +125,9 @@ MonoBehaviour:
   simpleBullet: {fileID: 8917940813283496913, guid: e7eca4bc436b74e469d4dbcc2b37ce38, type: 3}
   cooldown: 3
   canAttack: 0
+  bulletDamage: 200
+  shootSprite: {fileID: 0}
+  changeDuration: 0.15
 --- !u!212 &-3674693350815845318
 SpriteRenderer:
   serializedVersion: 2

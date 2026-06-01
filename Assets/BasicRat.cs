@@ -19,24 +19,30 @@ public class BasicRat : MonoBehaviour
     [SerializeField] private float cooldown;
     [SerializeField] private bool canAttack;
     [SerializeField] private float lastAttackTime = 0f;
+    [SerializeField] private float lastTalkTime = 0f;
+    [SerializeField] private float periodOfTalk = 20f;
     [SerializeField] private float range;
     [SerializeField] protected LayerMask enemyLayer;
     [SerializeField] private bool isAttacking;
     [SerializeField] private GameObject rewardFood;
+    [SerializeField] private AudioClip mouseSound;
     
     private List<Effect> effects;
     private bool _isKnockedBack;
+    private Cell currentCell;
     
     public float Speed => speed;
     public float CurSpeed { get => curSpeed; set => curSpeed = value; }
     public bool IsKnockedBack => _isKnockedBack;
-
+    private AudioSource audioSource;
     protected virtual void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
         curSpeed = speed;
         mainCamera = Camera.main;
         effects = new List<Effect>();
+
     }
 
     protected void Update()
@@ -51,6 +57,7 @@ public class BasicRat : MonoBehaviour
         HandleAttack();
         HandleInBounds();
         HandleEffect();
+        HandleTalk();
         HandleMove(); 
     }
 
@@ -64,6 +71,16 @@ public class BasicRat : MonoBehaviour
             SceneManager.LoadScene("DefeatVideo");
     }
 
+    void HandleTalk()
+    {
+        if (Time.time >= lastTalkTime + periodOfTalk)
+        {
+            var volume = PlayerPrefs.GetFloat("SoundVolume");
+            audioSource.PlayOneShot(mouseSound, volume);
+            lastTalkTime = Time.time;
+        } 
+
+    }
     void HandleMove()
     {
         if (!isAttacking)
@@ -74,23 +91,16 @@ public class BasicRat : MonoBehaviour
     {
         curSpeed = speed;
 
-        var cellCollider = Physics2D.OverlapPoint(transform.position, LayerMask.GetMask("Cell"));
-
-        if (cellCollider != null)
+        if (currentCell != null)
         {
-            var cell = cellCollider.GetComponent<Cell>();
-
-            if (cell != null)
+            foreach (var effect in currentCell.Effects)
             {
-                foreach (var effect in cell.Effects)
+                if (!effects.Any(e => e.GetType() == effect.GetType()))
+                    effects.Add(effect);
+                else
                 {
-                    if (!effects.Any(e => e.GetType() == effect.GetType()))
-                        effects.Add(effect);
-                    else
-                    {
-                        var existingEffect = loyaltyEffect(effect);
-                        if (existingEffect != null) existingEffect.Refresh();
-                    }
+                    var existingEffect = loyaltyEffect(effect);
+                    if (existingEffect != null) existingEffect.Refresh();
                 }
             }
         }
@@ -105,6 +115,24 @@ public class BasicRat : MonoBehaviour
                 effect.RemoveEffect(this);
                 effects.RemoveAt(i);
             }
+        }
+    }
+
+    protected void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("Enter");
+
+        if (collision.TryGetComponent<Cell>(out var cell))
+        {
+            currentCell = cell;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (currentCell != null && collision.gameObject == currentCell.gameObject)
+        {
+            currentCell = null;
         }
     }
 

@@ -49,9 +49,10 @@ MonoBehaviour:
   maxHp: 100
   curHp: 100
   range: 0
-  inventoryActiveSprite: {fileID: 0}
-  inventoryPassiveSprite: {fileID: 0}
+  inventoryActiveSprite: {fileID: 1736428684734924697, guid: c99ee2963f4e16f4b873991c02633de6, type: 3}
+  inventoryPassiveSprite: {fileID: 8630855992080981333, guid: f1f535c8b48527847804b27f89fbcb3a, type: 3}
   currentFoodPrefab: {fileID: 0}
+  currentCell: {fileID: 0}
   spriteRenderer: {fileID: 0}
   enemyLayer:
     serializedVersion: 2

@@ -116,9 +116,10 @@ public class GameManager : MonoBehaviour
         {
             var nextLevelNumber = int.Parse(sceneName.Last().ToString()) + 1;
 
+            Debug.Log(nextLevelNumber);
             PlayerPrefs.SetInt("Current level", nextLevelNumber);
             PlayerPrefs.Save();
-            SceneManager.LoadScene("Level" + nextLevelNumber.ToString());
+            SceneManager.LoadScene("WinVideo");
         }
     }
 }

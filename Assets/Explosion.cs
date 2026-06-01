@@ -7,8 +7,15 @@ public class Explosion : MonoBehaviour
     [SerializeField]public float explosionRadius;
     [SerializeField]public float explosionDamage;
     [SerializeField] public LayerMask damageableLayers;
+    [SerializeField] private AudioClip explosionSound;
 
     [SerializeField] public GameObject visualEffectPrefab;
+    private AudioSource audioSource;
+
+    private void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
     public void Detonate()
     {
@@ -35,6 +42,7 @@ public class Explosion : MonoBehaviour
     void PlayExplosionEffects()
     {
         Instantiate(visualEffectPrefab, transform.position, Quaternion.identity);
+        audioSource.PlayOneShot(explosionSound, PlayerPrefs.GetFloat("SoundVolume"));
     }
 
     void OnDrawGizmosSelected()

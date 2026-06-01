@@ -7,7 +7,15 @@ public class StartButton : MonoBehaviour
 {
     private void OnMouseDown()
     {
-        var currentLevel = !PlayerPrefs.HasKey("Current level") ? 1 : PlayerPrefs.GetInt("Current level");
-        SceneManager.LoadScene("Level" + currentLevel.ToString());
+        PlayerPrefs.SetInt("Current level", 1);
+
+        if (!PlayerPrefs.HasKey("Current level"))
+            PlayerPrefs.SetInt("Current level", 1);
+
+        if (!PlayerPrefs.HasKey("SoundVolume"))
+            PlayerPrefs.SetFloat("SoundVolume", 1.0f);
+
+
+        SceneManager.LoadScene("Level" + PlayerPrefs.GetInt("Current level").ToString());
     }
 }

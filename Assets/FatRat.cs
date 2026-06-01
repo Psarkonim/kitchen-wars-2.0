@@ -20,8 +20,10 @@ public class FatRat : BasicRat
         animator = GetComponentInChildren<Animator>();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private new void OnTriggerEnter2D(Collider2D collision)
     {
+        base.OnTriggerEnter2D(collision);
+
         if (collision.TryGetComponent<Bullet>(out Bullet _))
         {
             bulletsIn += 1;
