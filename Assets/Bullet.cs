@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    [SerializeField] private float damage;
+    [Header("Bullet Settings")]
+    public float damage; 
     [SerializeField] float speed = 0.8f;
 
     Rigidbody2D rb;
@@ -13,7 +14,6 @@ public class Bullet : MonoBehaviour
         Destroy(gameObject, 10f);
     }
 
-    // Update is called once per frame
     void Update()
     {
         HandleMove();
@@ -31,5 +31,11 @@ public class Bullet : MonoBehaviour
     void HandleMove()
     {
         rb.linearVelocity = new Vector2(speed, rb.linearVelocity.y);
+    }
+
+    // Публичный метод-сеттер, который мы вызываем при спавне пули в Chocolate и Raspberry
+    public void SetDamage(float newDamage)
+    {
+        damage = newDamage;
     }
 }

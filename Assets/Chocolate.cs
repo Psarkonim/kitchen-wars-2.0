@@ -14,6 +14,9 @@ public class Chocolate : Food
     [Header("Attack Settings")]
     public float attackInterval = 1.5f;
     
+    [Header("Damage Settings")]
+    public float bulletDamage = 5f; 
+    
     private int _shotsLeft;                       
     private float _nextFireTime = 0f;                   
 
@@ -49,7 +52,12 @@ public class Chocolate : Food
 
         if (projectilePrefab != null)
         {
-            Instantiate(projectilePrefab, transform.position, Quaternion.identity);
+            GameObject bullet = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
+            
+            if (bullet.TryGetComponent<Bullet>(out Bullet bulletScript))
+            {
+                bulletScript.SetDamage(bulletDamage);
+            }
         }
 
         UpdateVisualState();
