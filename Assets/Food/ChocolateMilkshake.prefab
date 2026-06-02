@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3343196647870021031}
   - component: {fileID: 703074847119372100}
   - component: {fileID: 3761247540765351185}
-  m_Layer: 3
+  m_Layer: 11
   m_Name: ChocolateMilkshake
   m_TagString: Food
   m_Icon: {fileID: 0}
@@ -159,6 +159,7 @@ MonoBehaviour:
   inventoryActiveSprite: {fileID: 0}
   inventoryPassiveSprite: {fileID: 0}
   currentFoodPrefab: {fileID: 0}
+  currentCell: {fileID: 0}
   spriteRenderer: {fileID: 0}
   enemyLayer:
     serializedVersion: 2

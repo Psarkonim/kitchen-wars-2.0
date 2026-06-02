@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4274993461567894510}
   - component: {fileID: 4955453827544119387}
   - component: {fileID: 7418791037315369047}
-  m_Layer: 3
+  m_Layer: 11
   m_Name: Milk
   m_TagString: Food
   m_Icon: {fileID: 0}
