@@ -8,6 +8,7 @@ public class InventoryCell : MonoBehaviour
     [SerializeField] private bool isEmpty = true;
     
     [SerializeField] private TextMeshPro amountText;
+    [SerializeField] private AudioClip clickSound;
 
     private SpriteRenderer spriteRenderer;
     private Vector2 currentSize;
@@ -31,20 +32,24 @@ public class InventoryCell : MonoBehaviour
         UpdateAmountDisplay(); 
     }
 
-    public void IncreaseAmount() => amount += 1;
+    public void IncreaseAmount() 
+    {
+        amount += 1;
+        UpdateAmountDisplay();
+    }
+
     private void UpdateAmountDisplay()
     {
         if (amountText)
         {
             amountText.text = amount.ToString();
-            
-            amountText.gameObject.SetActive(amount > 0);
         }
     }
 
     private void OnMouseDown()
     {
         ChooseFood();
+        AudioSource.PlayClipAtPoint(clickSound, transform.position, PlayerPrefs.GetFloat("SoundVolume"));
     }
 
     private void ChooseFood()

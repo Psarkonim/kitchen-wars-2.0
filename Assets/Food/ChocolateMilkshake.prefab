@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 4917896160202814371}
   - component: {fileID: 3240613109351953007}
   - component: {fileID: 3343196647870021031}
-  - component: {fileID: 703074847119372100}
   - component: {fileID: 3761247540765351185}
   m_Layer: 11
   m_Name: ChocolateMilkshake
@@ -153,31 +152,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ca056cad98b4f2880d16c96aee76465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChocolateCocktail
-  maxHp: 0
-  curHp: 0
+  maxHp: 20
+  curHp: 20
   range: 0
   inventoryActiveSprite: {fileID: 0}
   inventoryPassiveSprite: {fileID: 0}
   currentFoodPrefab: {fileID: 0}
   currentCell: {fileID: 0}
+  dieSound: {fileID: 8300000, guid: 215024c9388811b43bfefdc2bc1e4cc9, type: 3}
   spriteRenderer: {fileID: 0}
   enemyLayer:
     serializedVersion: 2
     m_Bits: 0
   buffRadius: 3
   damageBuffMultiplier: 1.5
---- !u!114 &703074847119372100
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 825665143532520086}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e31057ef324a04478bb4f7d469b3cdc0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.EnhancedTouch.TouchSimulation
 --- !u!50 &3761247540765351185
 Rigidbody2D:
   serializedVersion: 5

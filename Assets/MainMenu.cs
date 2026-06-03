@@ -4,12 +4,17 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public void StartGame()
+    private void Awake()
     {
-        Debug.Log("start");
-        SceneManager.LoadScene("Level1");
-    }
+        if (!PlayerPrefs.HasKey("Current level"))
+            PlayerPrefs.SetInt("Current level", 1);
 
+        if (!PlayerPrefs.HasKey("SoundVolume"))
+            PlayerPrefs.SetFloat("SoundVolume", 0.75f);
+
+        if (!PlayerPrefs.HasKey("MusicVolume"))
+            PlayerPrefs.SetFloat("MusicVolume", 0.75f);
+    }
 
     public void QuitGame()
     {

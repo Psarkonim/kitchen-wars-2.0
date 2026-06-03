@@ -268,7 +268,7 @@ MonoBehaviour:
   lastAttackTime: 0
   lastTalkTime: 0
   periodOfTalk: 20
-  range: 2
+  range: 0.65
   enemyLayer:
     serializedVersion: 2
     m_Bits: 2048
@@ -276,6 +276,7 @@ MonoBehaviour:
   rewardFood: {fileID: 0}
   mouseSound: {fileID: 8300000, guid: 58faf91333019d343a9be22f1c94f073, type: 3}
   mouseToSpawn: {fileID: 1741352504946120824, guid: 4fc0bf024d3ade34d8b82cae6c5eea2a, type: 3}
+  fallSound: {fileID: 8300000, guid: 7562a534784ec254faebe5bc49c6f36f, type: 3}
 --- !u!82 &-7840936987967744366
 AudioSource:
   m_ObjectHideFlags: 0

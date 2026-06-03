@@ -113,6 +113,7 @@ MonoBehaviour:
   inventoryPassiveSprite: {fileID: -4323596404876059136, guid: 066ac02d7449ea94996a48217010c027, type: 3}
   currentFoodPrefab: {fileID: 0}
   currentCell: {fileID: 0}
+  dieSound: {fileID: 8300000, guid: 215024c9388811b43bfefdc2bc1e4cc9, type: 3}
   spriteRenderer: {fileID: 0}
   enemyLayer:
     serializedVersion: 2

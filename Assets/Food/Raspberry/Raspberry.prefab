@@ -118,6 +118,7 @@ MonoBehaviour:
   inventoryPassiveSprite: {fileID: -2199644369033133681, guid: 3e794af4f0187d84194e68f75c9f1b34, type: 3}
   currentFoodPrefab: {fileID: 0}
   currentCell: {fileID: 0}
+  dieSound: {fileID: 8300000, guid: 215024c9388811b43bfefdc2bc1e4cc9, type: 3}
   spriteRenderer: {fileID: 0}
   enemyLayer:
     serializedVersion: 2
@@ -126,7 +127,7 @@ MonoBehaviour:
   cooldown: 3
   canAttack: 0
   bulletDamage: 10
-  shootSprite: {fileID: 0}
+  shootSprite: {fileID: -7961891679689217721, guid: 00fed0951f43e664282bcbe1633ae532, type: 3}
   changeDuration: 0.15
 --- !u!212 &-3674693350815845318
 SpriteRenderer:

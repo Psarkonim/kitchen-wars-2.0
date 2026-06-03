@@ -5,15 +5,9 @@ using UnityEngine;
 
 public class RatSpawner : MonoBehaviour
 {
-    [Serializable]
-    public struct RatSpawnEntry
-    {
-        [Tooltip("Префаб мыши")] public GameObject ratPrefab;
-        [Tooltip("Задержка до спавном")] public float delayBeforeSpawn;
-    }
-
     [Header("Wave Settings")]
-    [SerializeField] private List<RatSpawnEntry> waveQueue = new();
+    [SerializeField] public List<RatSpawnEntry> waveQueue = new();
+    public float totalDelay;
     
     [Header("Controls")]
     [SerializeField] private bool autoStart = true;
@@ -25,6 +19,12 @@ public class RatSpawner : MonoBehaviour
     private void Start()
     {
         if (autoStart) StartSpawning();
+    }
+
+    public void AddEntry(RatSpawnEntry entry)
+    {
+        waveQueue.Add(entry);
+        totalDelay += entry.delayBeforeSpawn;
     }
 
     private void StartSpawning()

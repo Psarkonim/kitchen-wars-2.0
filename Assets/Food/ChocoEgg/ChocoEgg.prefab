@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -177,6 +177,7 @@ MonoBehaviour:
   inventoryPassiveSprite: {fileID: 0}
   currentFoodPrefab: {fileID: 0}
   currentCell: {fileID: 0}
+  dieSound: {fileID: 8300000, guid: c90edc0c0a82525478a1bc2754811840, type: 3}
   spriteRenderer: {fileID: 0}
   enemyLayer:
     serializedVersion: 2
@@ -192,3 +193,4 @@ MonoBehaviour:
   - {fileID: 825665143532520086, guid: f163c1e5debdea14b85669ee1d064f54, type: 3}
   - {fileID: 1896093777747015118, guid: de5fd56e9d19bac4fbccd26cfc18414e, type: 3}
   brokenEggSprite: {fileID: -4885137203296551525, guid: 7b5d37a8b0ad27648b21e395b81bb2a2, type: 3}
+  breakSound: {fileID: 8300000, guid: 7a6007fdad4211a41b127b34e8e6ef15, type: 3}

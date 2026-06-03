@@ -47,13 +47,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36f6d4763eab4f2cb90b51bd86cadf7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RaspberryCocktail
-  maxHp: 50
-  curHp: 50
+  maxHp: 20
+  curHp: 20
   range: 0
   inventoryActiveSprite: {fileID: 0}
   inventoryPassiveSprite: {fileID: 0}
   currentFoodPrefab: {fileID: 0}
   currentCell: {fileID: 0}
+  dieSound: {fileID: 8300000, guid: 215024c9388811b43bfefdc2bc1e4cc9, type: 3}
   spriteRenderer: {fileID: 0}
   enemyLayer:
     serializedVersion: 2

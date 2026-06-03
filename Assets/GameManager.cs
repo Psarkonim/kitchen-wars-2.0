@@ -115,10 +115,14 @@ public class GameManager : MonoBehaviour
         {
             var nextLevelNumber = int.Parse(sceneName.Last().ToString()) + 1;
 
-            Debug.Log(nextLevelNumber);
-            PlayerPrefs.SetInt("Current level", nextLevelNumber);
-            PlayerPrefs.Save();
-            SceneManager.LoadScene("WinVideo");
+            if (nextLevelNumber == 6)
+                SceneManager.LoadScene("MainMenu");
+            else
+            {
+                PlayerPrefs.SetInt("Current level", nextLevelNumber);
+                PlayerPrefs.Save();
+                SceneManager.LoadScene("WinVideo");
+            }
         }
     }
 }

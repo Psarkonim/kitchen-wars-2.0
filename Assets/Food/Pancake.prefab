@@ -158,10 +158,12 @@ MonoBehaviour:
   inventoryPassiveSprite: {fileID: 0}
   currentFoodPrefab: {fileID: 0}
   currentCell: {fileID: 0}
+  dieSound: {fileID: 8300000, guid: 215024c9388811b43bfefdc2bc1e4cc9, type: 3}
   spriteRenderer: {fileID: 0}
   enemyLayer:
     serializedVersion: 2
     m_Bits: 256
   knockbackSpeed: 8
   knockbackDuration: 0.5
-  maxBounces: 8
+  maxBounces: 5
+  bounceSound: {fileID: 8300000, guid: d3df88c2e91a29a43bfddb8b5afa0835, type: 3}

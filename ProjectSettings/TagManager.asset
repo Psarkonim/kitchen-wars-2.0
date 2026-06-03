@@ -48,5 +48,8 @@ TagManager:
   - name: sprite
     uniqueID: 3375149603
     locked: 0
+  - name: ui
+    uniqueID: 3534807117
+    locked: 0
   m_RenderingLayers:
   - Default

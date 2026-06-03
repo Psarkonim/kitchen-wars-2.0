@@ -114,8 +114,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   mainCamera: {fileID: 0}
   speed: 0.2
-  maxHp: 200
-  curHp: 200
+  maxHp: 300
+  curHp: 300
   damage: 100
   curSpeed: 0.2
   cooldown: 6

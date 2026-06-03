@@ -44,6 +44,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RecipeBookPage5.unity
     guid: 947f5bf9cf7f28d4c991112429e4adf0
+  - enabled: 1
+    path: Assets/Scenes/EducationVideo.unity
+    guid: 733ae511fcbe39744a2f22e1e30665be
+  - enabled: 1
+    path: Assets/Scenes/Settings.unity
+    guid: 09042101ff71f714db51b9e7d9cf1bdd
+  - enabled: 1
+    path: Assets/Scenes/Level3.unity
+    guid: ba1ba9ba799839d46aeef21b92f7c804
+  - enabled: 1
+    path: Assets/Scenes/Level4.unity
+    guid: dc61ac9469c41904d923ad598c4ad5b7
+  - enabled: 1
+    path: Assets/Scenes/Level5.unity
+    guid: ef25b18854e66b64a9fa8301f4c11087
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
